@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:33:26.913Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Explique a mensagem fornecida em linguagem simples, indique verificações proporcionais e recomende validação fiscal. Não invente regra ou significado de código ausente.\n\nDados:\nMensagem: destinatário não informado.",
+  "stdout": "A mensagem “destinatário não informado” indica que o ERP não identificou quem deve receber o documento. A mensagem, por si só, não informa a causa.\n\n- Confira se o destinatário foi selecionado ou preenchido no documento.\n- Se já estiver preenchido, verifique se a informação foi salva e se aparece ao reabrir o documento.\n\nO tipo de documento, a etapa em que a mensagem apareceu e um eventual código de erro não foram informados. Recomenda-se validar com a equipe fiscal se a operação exige a identificação do destinatário e quais dados devem constar no documento.\n"
+}

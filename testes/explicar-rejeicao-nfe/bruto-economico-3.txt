@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:33:42.471Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Explique a mensagem fornecida em linguagem simples, indique verificações proporcionais e recomende validação fiscal. Não invente regra ou significado de código ausente.\n\nDados:\nMensagem: total dos itens difere do total informado.",
+  "stdout": "A mensagem indica que a soma dos valores dos itens não coincide com o total informado no documento.\n\nConfira se todos os itens foram incluídos e se seus valores e o total estão corretos. Os dados não informam quais itens ou valores causaram a diferença, então não é possível identificar a origem por aqui. Antes de ajustar ou reenviar o documento, valide os valores e o total com a equipe fiscal.\n"
+}

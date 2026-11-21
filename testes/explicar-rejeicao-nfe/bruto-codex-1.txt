@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:33:16.046Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Explique a mensagem fornecida em linguagem simples, indique verificações proporcionais e recomende validação fiscal. Não invente regra ou significado de código ausente.\n\nDados:\nMensagem: campo de data de emissão inválido.",
+  "stdout": "O ERP indica que a data de emissão informada não foi aceita. A mensagem, por si só, não identifica a causa.\n\nConfira se o campo está preenchido, se a data existe no calendário, se corresponde à data do documento e se está no formato indicado na tela.\n\nA data informada, o formato esperado e o tipo de documento não foram fornecidos. Se a mensagem persistir, encaminhe esses dados à equipe fiscal para validar a data de emissão aplicável antes de alterar a data do documento.\n"
+}

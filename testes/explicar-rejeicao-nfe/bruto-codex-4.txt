@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:33:48.962Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Explique a mensagem fornecida em linguagem simples, indique verificações proporcionais e recomende validação fiscal. Não invente regra ou significado de código ausente.\n\nDados:\nMensagem: inscrição estadual não corresponde ao cadastro.",
+  "stdout": "O ERP indica uma divergência entre a inscrição estadual informada e a que consta no cadastro usado na validação.\n\n- Confira se a inscrição estadual foi digitada corretamente e se o cadastro selecionado é o da empresa ou filial envolvida.\n- Compare a inscrição estadual informada com a registrada nesse cadastro. Se houver diferença, peça à equipe fiscal que confirme o dado correto antes de fazer qualquer alteração.\n\nA mensagem não informa qual cadastro foi consultado, quais valores foram comparados nem o código do erro. Com os dados fornecidos, não é possível identificar a causa exata da divergência.\n"
+}

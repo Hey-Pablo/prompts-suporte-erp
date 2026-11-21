@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:33:31.800Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Explique a mensagem fornecida em linguagem simples, indique verificações proporcionais e recomende validação fiscal. Não invente regra ou significado de código ausente.\n\nDados:\nMensagem: destinatário não informado.",
+  "stdout": "A mensagem indica que o destinatário não foi informado.\n\nVerifique se o campo de destinatário está preenchido e se o documento ou cadastro selecionado corresponde ao destinatário esperado. Os dados fornecidos não identificam qual tela, documento ou campo gerou a mensagem; sem esse contexto, não dá para determinar a causa específica.\n\nSe isso afetar um documento fiscal, valide o preenchimento com a equipe fiscal antes de transmiti-lo.\n"
+}
