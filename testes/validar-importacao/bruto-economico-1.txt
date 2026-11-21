@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:45:55.450Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Proponha verificações de importação com contagem, campos obrigatórios, duplicidades e reconciliação quando possível; sinalize dados ausentes e não execute alterações.\n\nDados:\nCSV fictício: 10 linhas, campos código e nome; destino não informado.",
+  "stdout": "Com os dados fornecidos, só é possível confirmar que o CSV fictício tem 10 linhas e os campos `código` e `nome`. O destino da importação não foi informado; sem ele, não dá para confirmar o mapeamento, os campos obrigatórios ou os critérios de reconciliação. Não executei alterações.\n\nVerificações propostas:\n\n- **Contagem:** confirmar 10 registros de dados, esclarecendo se o cabeçalho está incluído nessa contagem.\n- **Campos obrigatórios:** verificar se `código` e `nome` estão preenchidos. Os campos obrigatórios do destino são desconhecidos.\n- **Duplicidades:** procurar códigos repetidos no CSV; a regra de unicidade no destino não foi informada.\n- **Reconciliação:** comparar a quantidade e os valores importados com as 10 linhas do CSV, após identificar o destino e o mapeamento dos campos.\n"
+}

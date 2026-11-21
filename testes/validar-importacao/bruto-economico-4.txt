@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:46:48.392Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Proponha verificações de importação com contagem, campos obrigatórios, duplicidades e reconciliação quando possível; sinalize dados ausentes e não execute alterações.\n\nDados:\nArquivo de clientes fictícios; comparar totais de origem e destino.",
+  "stdout": "Os dados fornecidos não incluem o arquivo nem totais de origem e destino. Não é possível comparar as contagens ou reconciliar os registros.\n\nPara verificar a importação, reúna o arquivo e os totais dos dois lados. Então confira:\n\n- **Contagem:** compare o número de registros na origem com o número importado no destino e explique qualquer diferença.\n- **Campos obrigatórios:** identifique quais campos são obrigatórios no ERP e conte registros com valores ausentes ou inválidos.\n- **Duplicidades:** verifique chaves como código do cliente ou documento, se estiverem disponíveis; não presuma quais campos identificam um cliente.\n- **Reconciliação:** compare os registros por uma chave comum e liste os ausentes na origem ou no destino, se os dados permitirem.\n\nNenhuma alteração foi executada.\n"
+}
