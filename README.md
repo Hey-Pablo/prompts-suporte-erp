@@ -43,7 +43,7 @@ e2e/                          # testes do site (Playwright)
 
 ## Resultado dos testes
 
-Quinze prompts, cinco casos cada, nos dois modelos. O modelo principal aprovou todos os casos; o econômico aprovou 71 de 75 (três prompts com 4 de 5). Sete prompts já estão na versão 2, reescritos depois de falhas registradas no histórico de cada um. Os resultados detalhados estão em `testes/<prompt>/avaliacao.md` e no site.
+Quinze prompts, cinco casos cada, nos dois modelos. O modelo principal aprovou todos os casos; o econômico aprovou 72 de 75 (três prompts com 4 de 5). Sete prompts já estão na versão 2, reescritos depois de falhas registradas no histórico de cada um. Os resultados detalhados estão em `testes/<prompt>/avaliacao.md` e no site.
 
 ## Decisões técnicas
 
