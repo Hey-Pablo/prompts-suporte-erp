@@ -20,10 +20,32 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 3,
+        "total": 5,
+        "nota_media": 2.6,
+        "limitacoes": [
+          "Caso 1: Classificou a nota como fiscal sem essa informação.",
+          "Caso 2: Afirmou impacto em toda a operação de vendas, não confirmado pelo relato."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "Uma pessoa não consegue imprimir uma nota; outras imprimem.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "- **Fatos:** Uma pessoa relata que não consegue imprimir uma nota. Outras pessoas conseguem imprimir. Não foi informado se elas imprimiram a mesma nota ou usaram a mesma impressora.\n- **Categoria:** Incidente de impressão no ERP. A falha foi relatada na etapa de impressão e a causa ainda é desconhecida.\n- **Impacto:** Baixo, preliminarmente. Há uma pessoa afetada no relato. O alcance da falha para outras notas ou impressoras ainda precisa ser confirmado.\n- **Urgência:** Indeterminada. Faltam informações sobre prazo e sobre a possibilidade de outra pessoa imprimir essa nota.\n- **Prioridade sugerida:** Baixa, provisoriamente, pelo alcance observado. Reavaliar se houver prazo imediato ou se a falha impedir a continuidade do processo.\n- **Hipóteses a verificar:** A falha pode estar associada à nota, ao usuário ou à impressora. Os dados fornecidos não permitem distinguir essas possibilidades.\n- **Informações solicitadas:** Qual é a mensagem de erro ou o que acontece ao tentar imprimir? A pessoa consegue imprimir outras notas? Outra pessoa consegue imprimir a mesma nota na mesma impressora? Há prazo ou alguma atividade parada por causa da falha?"
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -50,10 +72,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "Usuário relatou erro de login; senha redefinida; acesso confirmado.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "- **Problema** — Usuário relatou erro de login.\n- **Ações** — Senha redefinida.\n- **Resultado** — Acesso confirmado.\n- **Pendências** — Nenhuma pendência informada. Datas e horários não foram fornecidos."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -80,10 +123,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "Acesso liberado; peça novo teste.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "Olá! Seu acesso foi liberado. Por favor, tente acessar o ERP novamente e nos informe o resultado."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -110,10 +174,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "Abra Configurações, selecione Impressoras, escolha Padrão e salve.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "# Configurar a opção Padrão em Impressoras\n\n## Objetivo\n\nSelecionar a opção **Padrão** em **Impressoras** e salvar a configuração.\n\n## Pré-requisitos\n\nOs dados fornecidos não especificam permissões de acesso nem requisitos de configuração prévia.\n\n## Passos\n\n1. Abra **Configurações**.\n2. Selecione **Impressoras**.\n3. Escolha **Padrão**.\n4. Salve a configuração.\n\n## Verificação\n\nO procedimento não informa como confirmar que a configuração foi salva nem qual resultado deve aparecer após salvar."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -140,10 +225,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "Mensagem: campo de data de emissão inválido.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "O ERP indica que a data de emissão informada não foi aceita. A mensagem, por si só, não identifica a causa.\n\nConfira se o campo está preenchido, se a data existe no calendário, se corresponde à data do documento e se está no formato indicado na tela.\n\nA data informada, o formato esperado e o tipo de documento não foram fornecidos. Se a mensagem persistir, encaminhe esses dados à equipe fiscal para validar a data de emissão aplicável antes de alterar a data do documento."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -170,10 +276,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "Tabela produtos(id, nome, estoque): listar produtos com estoque menor que :limite.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "```sql\nSELECT id, nome, estoque\nFROM produtos\nWHERE estoque < :limite;\n```\n\nInforme o valor de `:limite` ao executar a consulta. A comparação é estrita, então produtos com estoque igual ao limite ficam de fora. Se houver registros com `estoque` nulo, eles também ficam de fora."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -200,10 +327,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "De: Ana. Assunto: erro de login. Sistema: ERP. Não consigo entrar. Contato: ramal 123.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "- **Solicitante** — Ana\n- **Assunto** — Erro de login\n- **Sistema** — ERP\n- **Sintoma** — Não consegue entrar no ERP.\n- **Contato** — Ramal 123"
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -230,10 +378,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 4,
+        "total": 5,
+        "nota_media": 2.6,
+        "limitacoes": [
+          "Caso 3: Não apresentou ordem provisória apesar de B ser descrito sem impacto e A ter prazo."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "A: todos os caixas parados agora; B: dúvida de relatório sem prazo.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "1. **A — Maior prioridade.** Todos os caixas estão parados agora. O impacto abrange todos os caixas, e a urgência é imediata.\n2. **B — Menor prioridade.** É uma dúvida sobre um relatório, sem prazo informado. O impacto operacional e o grau de urgência não foram informados.\n\nNão há empate. Nenhum SLA foi informado."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -260,10 +429,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 4,
+        "total": 5,
+        "nota_media": 2.6,
+        "limitacoes": [
+          "Caso 2: Pediu mais dados sem fornecer o checklist, evidências ou condição de escalonamento."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "Usuário não consegue acessar o ERP.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "**Sintoma informado:** um usuário relata que não consegue acessar o ERP. A etapa da falha, a mensagem de erro e o alcance do problema são desconhecidos.\n\n### Checklist de atendimento\n\n1. **Identifique onde o acesso falha.** Pergunte se o ERP não abre, se a falha ocorre ao entrar ou se aparece depois do login. Registre a mensagem exata, a data e a hora com fuso, o último acesso bem-sucedido e qualquer mudança recente relatada. Marque os dados indisponíveis como **desconhecidos**.\n2. **Colete evidências.** Registre o ambiente, o canal de acesso (navegador ou aplicativo), o dispositivo e a rede, se informados. Se houver captura de tela, oculte dados sensíveis. Nunca solicite senhas, códigos de autenticação ou tokens.\n3. **Verifique o alcance.** Consulte chamados relacionados ou o canal interno de status, se disponíveis. Registre se há outros usuários afetados e se existe uma interrupção conhecida. Se não conseguir confirmar o alcance, marque-o como **desconhecido**.\n4. **Confira os requisitos de acesso.** Use a documentação interna, se disponível, para confirmar o endereço oficial e se há exigência de rede corporativa, VPN ou autenticação adicional. Essas dependências são **desconhecidas** até confirmação. Evite tentativas repetidas de login, alterações de permissões, redefinições de senha e mudanças de configuração durante a triagem.\n5. **Escale conforme a evidência.** Se houver múltiplos usuários afetados ou indisponibilidade confirmada, acione o fluxo de incidentes, se definido. Se houver mensagem de bloqueio, falha de autenticação ou acesso negado, encaminhe à equipe responsável por acessos, se identificada. Se a falha persistir após as verificações disponíveis ou depender de informações que o suporte não consegue consultar, encaminhe à equipe responsável pelo ERP. Inclua no chamado a etapa da falha, o erro, o horário, o impacto, as verificações feitas e as dependências ainda desconhecidas."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -290,10 +480,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "Cliente relata demora sem previsão informada.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "Olá! Lamentamos a demora e entendemos a preocupação de seguir aguardando sem uma previsão.\n\nVocê pode nos informar o número do chamado? Com ele, podemos consultar o status do atendimento e verificar se há uma previsão registrada."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -320,10 +531,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "Não consigo entrar no sistema.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "O relato informa apenas que você não consegue entrar no sistema. Para identificar onde o acesso falha, preciso destes detalhes, em ordem de prioridade:\n\n1. Em que etapa o problema ocorre: ao abrir o ERP, ao enviar o login ou depois de entrar?\n2. O que aparece nessa etapa? Se houver uma mensagem de erro, informe o texto sem incluir dados pessoais.\n3. Quando o problema começou? Você já conseguiu acessar o ERP antes?\n4. Você sabe se outros usuários também estão com dificuldade para entrar?\n5. Você está acessando pelo navegador ou pelo aplicativo? Qual deles?"
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -350,10 +582,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 4,
+        "total": 5,
+        "nota_media": 2.8,
+        "limitacoes": [
+          "Caso 1: Disse que o impacto não foi informado, omitindo que um usuário foi afetado."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "Erro de login para um usuário; senha redefinida sem sucesso; captura disponível.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "### Resumo para suporte de segundo nível\n\n| Campo | Registro |\n|---|---|\n| Sintoma | Um usuário apresenta erro ao tentar entrar no ERP. |\n| Impacto | Um usuário afetado. Impacto nas atividades e alcance além desse usuário não informados. |\n| Evidências | Captura de tela disponível. Conteúdo da captura e mensagem exata do erro não informados. |\n| Ações feitas | A senha foi redefinida, mas o erro de login persistiu. |\n| Pendências | Analisar a captura e investigar a causa do erro. Identificação do usuário, ambiente e data e hora da ocorrência não informados. |"
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -380,10 +633,33 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 2,
+        "total": 5,
+        "nota_media": 2.4,
+        "limitacoes": [
+          "Caso 2: Incluiu próxima atualização não informada, contrariando o formato solicitado.",
+          "Caso 3: Incluiu próxima atualização não informada, contrariando o formato solicitado.",
+          "Caso 5: Incluiu próxima atualização não informada, contrariando o formato solicitado."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "ERP indisponível para filial fictícia; equipe investiga; atualização às 15h.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "**Serviço afetado** — ERP.\n\n**Impacto conhecido** — O ERP está indisponível para a filial fictícia. O impacto sobre as operações da filial não foi informado.\n\n**Estado** — A equipe está investigando. A causa ainda não foi informada.\n\n**Próxima atualização** — Às 15h."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -410,10 +686,31 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "Erro de login após troca de senha.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "**Termos de busca sugeridos**\n\n- “ERP erro de login após troca de senha”\n- “ERP falha de autenticação após alteração de senha”\n\n**Informações ausentes para selecionar um artigo**\n\n- Nome e versão do ERP.\n- Mensagem exata ou código do erro.\n- Forma de acesso ao ERP, como navegador ou aplicativo, e tipo de autenticação, se conhecido.\n- Como a senha foi alterada, por exemplo, pelo próprio usuário ou por redefinição administrativa.\n- Se o erro ocorre em todas as tentativas e se afeta outros usuários."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -440,10 +737,32 @@
         "motivo": "Estabelecer um primeiro teste."
       }
     ],
-    "avaliacoes": [],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 3,
+        "total": 5,
+        "nota_media": 2.6,
+        "limitacoes": [
+          "Caso 1: Pediu confirmar 10 registros embora as 10 linhas possam incluir cabeçalho.",
+          "Caso 5: Presumiu que existem exatamente cinco registros ausentes, sem comparar os conjuntos."
+        ]
+      }
+    ],
     "exemplo": {
       "entrada": "CSV fictício: 10 linhas, campos código e nome; destino não informado.",
-      "saida": "Pendente de execução e avaliação."
+      "saida": "O CSV fictício tem **10 linhas informadas** e dois campos, `código` e `nome`. Nenhuma alteração foi executada.\n\n| Verificação | O que validar | Dados ausentes |\n|---|---|---|\n| Contagem | Confirmar se as 10 linhas incluem o cabeçalho. Se ele estiver incluído, são esperados 9 registros. Caso contrário, são esperados 10. | Conteúdo do CSV e confirmação sobre o cabeçalho. |\n| Campos obrigatórios | Confirmar quais campos o destino exige. Se `código` e `nome` forem obrigatórios, verificar se estão preenchidos em cada registro. | Valores das linhas e regras do destino. |\n| Duplicidades | Contar códigos repetidos no CSV e, se `código` for a chave do destino, verificar quais já existem lá. | Valores dos códigos, chave do destino e registros existentes. |\n| Reconciliação | Quando houver relatório de importação, conferir se todos os registros de dados estão contabilizados como aceitos, rejeitados ou ignorados. Se houver acesso ao destino e `código` for a chave, comparar os nomes dos registros aceitos com os do CSV. | Destino e relatório de importação. |"
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
