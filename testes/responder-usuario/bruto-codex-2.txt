@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:31:04.688Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Redija resposta cordial e objetiva ao usuário com situação, próximo passo e prazo apenas se informado. Não prometa solução.\n\nDados:\nEquipe analisa erro; não há previsão.",
+  "stdout": "Olá! Nossa equipe está analisando o erro. O próximo passo é dar continuidade à investigação. No momento, não há previsão de conclusão. Agradecemos a compreensão.\n"
+}

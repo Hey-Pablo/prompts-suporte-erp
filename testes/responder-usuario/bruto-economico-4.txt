@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:31:24.098Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Redija resposta cordial e objetiva ao usuário com situação, próximo passo e prazo apenas se informado. Não prometa solução.\n\nDados:\nChamado encerrado após confirmação de impressão.",
+  "stdout": "O chamado foi encerrado após a confirmação de que a impressão foi realizada. Não há próximo passo ou prazo informado.\n"
+}
