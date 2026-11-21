@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:32:24.018Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Converta o procedimento em artigo com objetivo, pré-requisitos, passos e verificação. Aponte lacunas sem inventar etapas.\n\nDados:\nFaça backup conforme política local; depois importe o arquivo de teste.",
+  "stdout": "# Importação de arquivo de teste no ERP\n\n## Objetivo\n\nImportar o arquivo de teste no ERP após realizar o backup conforme a política local.\n\n## Pré-requisitos\n\n- Política local de backup. O conteúdo da política não foi fornecido.\n- Arquivo de teste. O nome, o formato e a localização não foram informados.\n\n## Passos\n\n1. Faça o backup conforme a política local.\n2. Após concluir o backup, importe o arquivo de teste no ERP. O caminho no sistema e os parâmetros de importação não foram informados.\n\n## Verificação\n\nO procedimento não informa como confirmar a conclusão do backup nem como verificar se a importação foi bem-sucedida.\n"
+}

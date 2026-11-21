@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:32:17.275Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Converta o procedimento em artigo com objetivo, pré-requisitos, passos e verificação. Aponte lacunas sem inventar etapas.\n\nDados:\nNo menu Usuários, selecione conta e marque Ativo; confirme com teste de acesso.",
+  "stdout": "## Ativar uma conta de usuário\n\n**Objetivo**  \nAtivar uma conta de usuário e confirmar se o acesso funciona.\n\n**Pré-requisitos**  \n- A conta que será ativada.\n\n**Passos**  \n1. No menu **Usuários**, selecione a conta.\n2. Marque **Ativo**.\n\n**Verificação**  \nConfirme a ativação com um teste de acesso.\n\n**Lacunas**  \nNão foram informados os critérios para selecionar a conta, como salvar a alteração nem como realizar o teste de acesso.\n"
+}

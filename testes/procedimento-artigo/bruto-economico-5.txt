@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:32:57.612Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Converta o procedimento em artigo com objetivo, pré-requisitos, passos e verificação. Aponte lacunas sem inventar etapas.\n\nDados:\nDesative o serviço, altere uma configuração não especificada e reinicie; não há validação descrita.",
+  "stdout": "## Desativar e reiniciar o serviço\n\n**Objetivo**  \nDesativar o serviço, alterar uma configuração e reiniciá-lo.\n\n**Pré-requisitos**  \n- Acesso necessário para desativar e reiniciar o serviço. Esse acesso não foi especificado.\n- Identificação da configuração a alterar e do valor desejado. Esses dados não foram fornecidos.\n\n**Passos**  \n1. Desative o serviço.\n2. Altere a configuração. O nome da configuração e o valor não foram especificados.\n3. Reinicie o serviço.\n\n**Verificação**  \nNão há procedimento de validação descrito. Confirme com a equipe responsável como verificar se a alteração foi aplicada e se o serviço está funcionando.\n\n**Lacunas**  \nNão foram informados o serviço, a configuração e seu valor, os comandos ou a interface a usar, nem critérios de sucesso ou validação.\n"
+}
