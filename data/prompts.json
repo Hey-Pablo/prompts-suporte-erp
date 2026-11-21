@@ -4,20 +4,26 @@
     "titulo": "Classificar chamado",
     "categoria": "Triagem",
     "descricao": "Classifique o relato por categoria, impacto, urgência e prioridade sugerida. Separe fatos de suposições; peça informação ausente. Responda em tópicos com justificativa.",
-    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Classifique o relato por categoria, impacto, urgência e prioridade sugerida. Separe fatos de suposições; peça informação ausente. Responda em tópicos com justificativa.\n\nDados:\n{entrada}",
+    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Classifique o relato por categoria, impacto, urgência e prioridade sugerida. Separe fatos de suposições; peça informação ausente. Responda em tópicos com justificativa. Não atribua tipo fiscal à nota nem afirme que vendas pararam sem confirmação; identifique hipóteses explicitamente.\n\nDados:\n{entrada}",
     "variaveis": [
       {
         "nome": "entrada",
         "descricao": "Dados fictícios relevantes para a tarefa."
       }
     ],
-    "versao": "v1",
+    "versao": "v2",
     "historico": [
       {
         "versao": "v1",
         "data": "2026-11-21",
         "mudanca": "Versão inicial.",
         "motivo": "Estabelecer um primeiro teste."
+      },
+      {
+        "versao": "v2",
+        "data": "2026-11-21",
+        "mudanca": "Incluída orientação específica para corrigir a falha registrada na avaliação da v1.",
+        "motivo": "O modelo econômico presumiu tipo fiscal e impacto em vendas."
       }
     ],
     "avaliacoes": [
@@ -34,18 +40,17 @@
       {
         "modelo": "gpt-6-luna",
         "data_teste": "2026-11-21",
-        "aprovados": 3,
+        "aprovados": 5,
         "total": 5,
-        "nota_media": 2.6,
+        "nota_media": 3.0,
         "limitacoes": [
-          "Caso 1: Classificou a nota como fiscal sem essa informação.",
-          "Caso 2: Afirmou impacto em toda a operação de vendas, não confirmado pelo relato."
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
         ]
       }
     ],
     "exemplo": {
       "entrada": "Uma pessoa não consegue imprimir uma nota; outras imprimem.",
-      "saida": "- **Fatos:** Uma pessoa relata que não consegue imprimir uma nota. Outras pessoas conseguem imprimir. Não foi informado se elas imprimiram a mesma nota ou usaram a mesma impressora.\n- **Categoria:** Incidente de impressão no ERP. A falha foi relatada na etapa de impressão e a causa ainda é desconhecida.\n- **Impacto:** Baixo, preliminarmente. Há uma pessoa afetada no relato. O alcance da falha para outras notas ou impressoras ainda precisa ser confirmado.\n- **Urgência:** Indeterminada. Faltam informações sobre prazo e sobre a possibilidade de outra pessoa imprimir essa nota.\n- **Prioridade sugerida:** Baixa, provisoriamente, pelo alcance observado. Reavaliar se houver prazo imediato ou se a falha impedir a continuidade do processo.\n- **Hipóteses a verificar:** A falha pode estar associada à nota, ao usuário ou à impressora. Os dados fornecidos não permitem distinguir essas possibilidades.\n- **Informações solicitadas:** Qual é a mensagem de erro ou o que acontece ao tentar imprimir? A pessoa consegue imprimir outras notas? Outra pessoa consegue imprimir a mesma nota na mesma impressora? Há prazo ou alguma atividade parada por causa da falha?"
+      "saida": "- **Fatos:** Uma pessoa não consegue imprimir uma nota. Outras pessoas conseguem imprimir. O tipo fiscal da nota e o efeito sobre as vendas não foram informados.\n- **Categoria:** ERP → Impressão de nota. O sintoma relatado ocorre na impressão.\n- **Impacto observado:** Restrito a uma pessoa até o momento. Ainda não se sabe se a falha afeta outras notas ou se outra pessoa consegue imprimir a mesma nota.\n- **Urgência sugerida: baixa, provisoriamente.** Não foi informado se há prazo imediato ou se alguma operação depende dessa impressão.\n- **Prioridade sugerida: baixa, provisoriamente.** O impacto observado é limitado. Reavaliar se houver prazo crítico, bloqueio operacional ou mais pessoas afetadas.\n- **Hipóteses a verificar:** A falha pode estar associada ao usuário, ao equipamento ou à própria nota. A causa ainda não foi confirmada.\n- **Informações necessárias:** Qual mensagem aparece ao tentar imprimir? A pessoa consegue imprimir outras notas? Outra pessoa consegue imprimir essa mesma nota? Há prazo imediato ou alguma operação aguardando a impressão?"
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -362,20 +367,26 @@
     "titulo": "Priorizar fila",
     "categoria": "Triagem",
     "descricao": "Ordene os chamados conforme impacto e urgência informados, justifique e explicite empates ou dados ausentes. Não invente SLA.",
-    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Ordene os chamados conforme impacto e urgência informados, justifique e explicite empates ou dados ausentes. Não invente SLA.\n\nDados:\n{entrada}",
+    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Ordene os chamados conforme impacto e urgência informados, justifique e explicite empates ou dados ausentes. Não invente SLA. Dê uma ordem provisória quando os dados sustentarem comparação, inclusive quando um item é descrito sem impacto; se não sustentarem, explique empate ou indeterminação.\n\nDados:\n{entrada}",
     "variaveis": [
       {
         "nome": "entrada",
         "descricao": "Dados fictícios relevantes para a tarefa."
       }
     ],
-    "versao": "v1",
+    "versao": "v2",
     "historico": [
       {
         "versao": "v1",
         "data": "2026-11-21",
         "mudanca": "Versão inicial.",
         "motivo": "Estabelecer um primeiro teste."
+      },
+      {
+        "versao": "v2",
+        "data": "2026-11-21",
+        "mudanca": "Incluída orientação específica para corrigir a falha registrada na avaliação da v1.",
+        "motivo": "O modelo econômico não apresentou ordem provisória no caso 3."
       }
     ],
     "avaliacoes": [
@@ -394,15 +405,15 @@
         "data_teste": "2026-11-21",
         "aprovados": 4,
         "total": 5,
-        "nota_media": 2.6,
+        "nota_media": 2.8,
         "limitacoes": [
-          "Caso 3: Não apresentou ordem provisória apesar de B ser descrito sem impacto e A ter prazo."
+          "Caso 3: Admite que o erro visual possa afetar usuários de forma relevante, embora a entrada diga que não há impacto."
         ]
       }
     ],
     "exemplo": {
       "entrada": "A: todos os caixas parados agora; B: dúvida de relatório sem prazo.",
-      "saida": "1. **A — Maior prioridade.** Todos os caixas estão parados agora. O impacto abrange todos os caixas, e a urgência é imediata.\n2. **B — Menor prioridade.** É uma dúvida sobre um relatório, sem prazo informado. O impacto operacional e o grau de urgência não foram informados.\n\nNão há empate. Nenhum SLA foi informado."
+      "saida": "**Ordem provisória: A → B.**\n\n1. **A — prioridade maior.** Todos os caixas estão parados. O impacto atinge toda a operação de caixa e a urgência é imediata.\n2. **B — prioridade menor.** É uma dúvida sobre relatório, sem prazo informado. O impacto e a urgência não foram informados.\n\nOs dados sustentam colocar A primeiro. Não há empate nesta ordem provisória."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -413,20 +424,26 @@
     "titulo": "Criar checklist de diagnóstico",
     "categoria": "Diagnóstico",
     "descricao": "Crie checklist seguro e ordenado para o sintoma, com coleta de evidências e condição de escalonamento. Evite ações destrutivas e marque dependências desconhecidas.",
-    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie checklist seguro e ordenado para o sintoma, com coleta de evidências e condição de escalonamento. Evite ações destrutivas e marque dependências desconhecidas.\n\nDados:\n{entrada}",
+    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie checklist seguro e ordenado para o sintoma, com coleta de evidências e condição de escalonamento. Evite ações destrutivas e marque dependências desconhecidas. Mesmo sem versão ou detalhes do ERP, forneça um checklist geral seguro, evidências e condição de escalonamento; perguntas adicionais não substituem o checklist.\n\nDados:\n{entrada}",
     "variaveis": [
       {
         "nome": "entrada",
         "descricao": "Dados fictícios relevantes para a tarefa."
       }
     ],
-    "versao": "v1",
+    "versao": "v2",
     "historico": [
       {
         "versao": "v1",
         "data": "2026-11-21",
         "mudanca": "Versão inicial.",
         "motivo": "Estabelecer um primeiro teste."
+      },
+      {
+        "versao": "v2",
+        "data": "2026-11-21",
+        "mudanca": "Incluída orientação específica para corrigir a falha registrada na avaliação da v1.",
+        "motivo": "O modelo econômico solicitou mais dados sem fornecer checklist no caso 2."
       }
     ],
     "avaliacoes": [
@@ -443,17 +460,17 @@
       {
         "modelo": "gpt-6-luna",
         "data_teste": "2026-11-21",
-        "aprovados": 4,
+        "aprovados": 5,
         "total": 5,
-        "nota_media": 2.6,
+        "nota_media": 3.0,
         "limitacoes": [
-          "Caso 2: Pediu mais dados sem fornecer o checklist, evidências ou condição de escalonamento."
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
         ]
       }
     ],
     "exemplo": {
       "entrada": "Usuário não consegue acessar o ERP.",
-      "saida": "**Sintoma informado:** um usuário relata que não consegue acessar o ERP. A etapa da falha, a mensagem de erro e o alcance do problema são desconhecidos.\n\n### Checklist de atendimento\n\n1. **Identifique onde o acesso falha.** Pergunte se o ERP não abre, se a falha ocorre ao entrar ou se aparece depois do login. Registre a mensagem exata, a data e a hora com fuso, o último acesso bem-sucedido e qualquer mudança recente relatada. Marque os dados indisponíveis como **desconhecidos**.\n2. **Colete evidências.** Registre o ambiente, o canal de acesso (navegador ou aplicativo), o dispositivo e a rede, se informados. Se houver captura de tela, oculte dados sensíveis. Nunca solicite senhas, códigos de autenticação ou tokens.\n3. **Verifique o alcance.** Consulte chamados relacionados ou o canal interno de status, se disponíveis. Registre se há outros usuários afetados e se existe uma interrupção conhecida. Se não conseguir confirmar o alcance, marque-o como **desconhecido**.\n4. **Confira os requisitos de acesso.** Use a documentação interna, se disponível, para confirmar o endereço oficial e se há exigência de rede corporativa, VPN ou autenticação adicional. Essas dependências são **desconhecidas** até confirmação. Evite tentativas repetidas de login, alterações de permissões, redefinições de senha e mudanças de configuração durante a triagem.\n5. **Escale conforme a evidência.** Se houver múltiplos usuários afetados ou indisponibilidade confirmada, acione o fluxo de incidentes, se definido. Se houver mensagem de bloqueio, falha de autenticação ou acesso negado, encaminhe à equipe responsável por acessos, se identificada. Se a falha persistir após as verificações disponíveis ou depender de informações que o suporte não consegue consultar, encaminhe à equipe responsável pelo ERP. Inclua no chamado a etapa da falha, o erro, o horário, o impacto, as verificações feitas e as dependências ainda desconhecidas."
+      "saida": "## Checklist de atendimento — usuário sem acesso ao ERP\n\n**Relato inicial:** um usuário informa que não consegue acessar o ERP. Produto, versão, ambiente, etapa da falha, mensagem de erro e abrangência do impacto ainda são desconhecidos.\n\n1. **Registrar onde o acesso falha.** Anotar data, hora e fuso da ocorrência, o identificador corporativo do usuário, o ambiente (se conhecido) e a etapa em que o problema aparece: ao abrir o ERP, ao autenticar ou após entrar. Registrar a mensagem exata ou indicar que nenhuma mensagem foi exibida.\n2. **Verificar a abrangência.** Confirmar se outros usuários autorizados conseguem acessar o mesmo ambiente com suas próprias contas. Se isso não puder ser verificado, registrar a abrangência como desconhecida. Consultar o canal interno de incidentes ou manutenção, se houver.\n3. **Conferir os pré-requisitos conhecidos.** Confirmar se o usuário está usando o endereço ou aplicativo oficial. Verificar rede corporativa, VPN, autenticação corporativa e MFA apenas se forem requisitos confirmados. Marcar como desconhecidos os requisitos que ainda não puderem ser confirmados.\n4. **Coletar evidências pelas vias autorizadas.** Anexar captura com dados sensíveis ocultados, código do erro e identificador de correlação, se exibidos. Se houver acesso autorizado, consultar os registros no horário da falha e anexar somente o trecho pertinente. Nunca solicitar senhas, códigos de MFA ou tokens.\n5. **Evitar agravar a falha.** Se for necessário confirmar o sintoma, fazer uma única tentativa pelo fluxo oficial, desde que não haja aviso de bloqueio ou suspeita de comprometimento. Durante a triagem, evitar redefinições de senha, alterações de permissões e reinícios de serviços.\n\n**Escalonar** se vários usuários estiverem afetados, se houver impacto em uma operação crítica ou se a falha persistir após as verificações aplicáveis. Encaminhar à equipe responsável pelo ERP ou, quando a evidência indicar a etapa da falha, à equipe de identidade ou infraestrutura. Se houver indício de comprometimento, interromper as tentativas e acionar a equipe de segurança. Incluir no chamado o impacto, o horário, a etapa da falha, as evidências, as verificações realizadas e as dependências que continuam desconhecidas."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -566,20 +583,83 @@
     "titulo": "Preparar escalonamento",
     "categoria": "Diagnóstico",
     "descricao": "Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados.",
-    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados.\n\nDados:\n{entrada}",
+    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados. No impacto registre explicitamente a quantidade ou abrangência informada, distinguindo-a de impacto operacional desconhecido.\n\nDados:\n{entrada}",
     "variaveis": [
       {
         "nome": "entrada",
         "descricao": "Dados fictícios relevantes para a tarefa."
       }
     ],
-    "versao": "v1",
+    "versao": "v2",
     "historico": [
       {
         "versao": "v1",
         "data": "2026-11-21",
         "mudanca": "Versão inicial.",
         "motivo": "Estabelecer um primeiro teste."
+      },
+      {
+        "versao": "v2",
+        "data": "2026-11-21",
+        "mudanca": "Incluída orientação específica para corrigir a falha registrada na avaliação da v1.",
+        "motivo": "O modelo econômico omitiu a abrangência informada no caso 1."
+      }
+    ],
+    "avaliacoes": [
+      {
+        "modelo": "gpt-6.2-sol",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      },
+      {
+        "modelo": "gpt-6-luna",
+        "data_teste": "2026-11-21",
+        "aprovados": 5,
+        "total": 5,
+        "nota_media": 3.0,
+        "limitacoes": [
+          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
+        ]
+      }
+    ],
+    "exemplo": {
+      "entrada": "Erro de login para um usuário; senha redefinida sem sucesso; captura disponível.",
+      "saida": "## Resumo para suporte de segundo nível\n\n- **Sintoma:** erro de login no ERP. A mensagem exata do erro não foi informada.\n- **Impacto:** 1 usuário com erro de login. O impacto operacional é desconhecido.\n- **Evidências:** captura de tela disponível. O conteúdo da captura não foi fornecido.\n- **Ações realizadas:** a senha foi redefinida, mas o erro de login persistiu.\n- **Pendências:** anexar a captura e confirmar os campos não informados: identificador do usuário, ambiente do ERP, data e hora da ocorrência, mensagem exata do erro e impacto operacional."
+    },
+    "limitacoes": [
+      "A saída exige revisão humana e não substitui validação no ambiente real."
+    ]
+  },
+  {
+    "id": "comunicar-incidente",
+    "titulo": "Comunicar incidente",
+    "categoria": "Comunicação",
+    "descricao": "Produza comunicado com serviço afetado, impacto conhecido, estado e próxima atualização somente se informada. Distinga hipótese de fato.",
+    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Produza comunicado com serviço afetado, impacto conhecido, estado e próxima atualização somente se informada. Distinga hipótese de fato. Não inclua seção nem menção à próxima atualização se ela não tiver sido informada.\n\nDados:\n{entrada}",
+    "variaveis": [
+      {
+        "nome": "entrada",
+        "descricao": "Dados fictícios relevantes para a tarefa."
+      }
+    ],
+    "versao": "v2",
+    "historico": [
+      {
+        "versao": "v1",
+        "data": "2026-11-21",
+        "mudanca": "Versão inicial.",
+        "motivo": "Estabelecer um primeiro teste."
+      },
+      {
+        "versao": "v2",
+        "data": "2026-11-21",
+        "mudanca": "Incluída orientação específica para corrigir a falha registrada na avaliação da v1.",
+        "motivo": "O modelo econômico incluiu próxima atualização não informada."
       }
     ],
     "avaliacoes": [
@@ -600,66 +680,13 @@
         "total": 5,
         "nota_media": 2.8,
         "limitacoes": [
-          "Caso 1: Disse que o impacto não foi informado, omitindo que um usuário foi afetado."
-        ]
-      }
-    ],
-    "exemplo": {
-      "entrada": "Erro de login para um usuário; senha redefinida sem sucesso; captura disponível.",
-      "saida": "### Resumo para suporte de segundo nível\n\n| Campo | Registro |\n|---|---|\n| Sintoma | Um usuário apresenta erro ao tentar entrar no ERP. |\n| Impacto | Um usuário afetado. Impacto nas atividades e alcance além desse usuário não informados. |\n| Evidências | Captura de tela disponível. Conteúdo da captura e mensagem exata do erro não informados. |\n| Ações feitas | A senha foi redefinida, mas o erro de login persistiu. |\n| Pendências | Analisar a captura e investigar a causa do erro. Identificação do usuário, ambiente e data e hora da ocorrência não informados. |"
-    },
-    "limitacoes": [
-      "A saída exige revisão humana e não substitui validação no ambiente real."
-    ]
-  },
-  {
-    "id": "comunicar-incidente",
-    "titulo": "Comunicar incidente",
-    "categoria": "Comunicação",
-    "descricao": "Produza comunicado com serviço afetado, impacto conhecido, estado e próxima atualização somente se informada. Distinga hipótese de fato.",
-    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Produza comunicado com serviço afetado, impacto conhecido, estado e próxima atualização somente se informada. Distinga hipótese de fato.\n\nDados:\n{entrada}",
-    "variaveis": [
-      {
-        "nome": "entrada",
-        "descricao": "Dados fictícios relevantes para a tarefa."
-      }
-    ],
-    "versao": "v1",
-    "historico": [
-      {
-        "versao": "v1",
-        "data": "2026-11-21",
-        "mudanca": "Versão inicial.",
-        "motivo": "Estabelecer um primeiro teste."
-      }
-    ],
-    "avaliacoes": [
-      {
-        "modelo": "gpt-6.2-sol",
-        "data_teste": "2026-11-21",
-        "aprovados": 5,
-        "total": 5,
-        "nota_media": 3.0,
-        "limitacoes": [
-          "Amostra limitada a cinco casos fictícios; revisão humana necessária."
-        ]
-      },
-      {
-        "modelo": "gpt-6-luna",
-        "data_teste": "2026-11-21",
-        "aprovados": 2,
-        "total": 5,
-        "nota_media": 2.4,
-        "limitacoes": [
-          "Caso 2: Incluiu próxima atualização não informada, contrariando o formato solicitado.",
-          "Caso 3: Incluiu próxima atualização não informada, contrariando o formato solicitado.",
-          "Caso 5: Incluiu próxima atualização não informada, contrariando o formato solicitado."
+          "Caso 5: Não informou que o serviço afetado é desconhecido."
         ]
       }
     ],
     "exemplo": {
       "entrada": "ERP indisponível para filial fictícia; equipe investiga; atualização às 15h.",
-      "saida": "**Serviço afetado** — ERP.\n\n**Impacto conhecido** — O ERP está indisponível para a filial fictícia. O impacto sobre as operações da filial não foi informado.\n\n**Estado** — A equipe está investigando. A causa ainda não foi informada.\n\n**Próxima atualização** — Às 15h."
+      "saida": "**Comunicado de indisponibilidade do ERP**\n\n- **Serviço afetado** — ERP.\n- **Impacto conhecido** — O ERP está indisponível para a filial fictícia.\n- **Estado** — A equipe está investigando. A causa não foi informada.\n- **Próxima atualização** — Às 15h."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."
@@ -721,20 +748,26 @@
     "titulo": "Planejar validação de importação",
     "categoria": "Dados",
     "descricao": "Proponha verificações de importação com contagem, campos obrigatórios, duplicidades e reconciliação quando possível; sinalize dados ausentes e não execute alterações.",
-    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Proponha verificações de importação com contagem, campos obrigatórios, duplicidades e reconciliação quando possível; sinalize dados ausentes e não execute alterações.\n\nDados:\n{entrada}",
+    "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Proponha verificações de importação com contagem, campos obrigatórios, duplicidades e reconciliação quando possível; sinalize dados ausentes e não execute alterações. Diferencie linhas de registros quando o cabeçalho é incerto; diferença entre totais não prova quais nem quantos registros individuais faltam sem comparar os conjuntos.\n\nDados:\n{entrada}",
     "variaveis": [
       {
         "nome": "entrada",
         "descricao": "Dados fictícios relevantes para a tarefa."
       }
     ],
-    "versao": "v1",
+    "versao": "v2",
     "historico": [
       {
         "versao": "v1",
         "data": "2026-11-21",
         "mudanca": "Versão inicial.",
         "motivo": "Estabelecer um primeiro teste."
+      },
+      {
+        "versao": "v2",
+        "data": "2026-11-21",
+        "mudanca": "Incluída orientação específica para corrigir a falha registrada na avaliação da v1.",
+        "motivo": "O modelo econômico confundiu linhas com registros e presumiu registros ausentes pela diferença de totais."
       }
     ],
     "avaliacoes": [
@@ -751,18 +784,17 @@
       {
         "modelo": "gpt-6-luna",
         "data_teste": "2026-11-21",
-        "aprovados": 3,
+        "aprovados": 4,
         "total": 5,
-        "nota_media": 2.6,
+        "nota_media": 2.8,
         "limitacoes": [
-          "Caso 1: Pediu confirmar 10 registros embora as 10 linhas possam incluir cabeçalho.",
-          "Caso 5: Presumiu que existem exatamente cinco registros ausentes, sem comparar os conjuntos."
+          "Caso 3: Trata a presença de cabeçalho como incerta, embora a entrada diga que não há cabeçalho."
         ]
       }
     ],
     "exemplo": {
       "entrada": "CSV fictício: 10 linhas, campos código e nome; destino não informado.",
-      "saida": "O CSV fictício tem **10 linhas informadas** e dois campos, `código` e `nome`. Nenhuma alteração foi executada.\n\n| Verificação | O que validar | Dados ausentes |\n|---|---|---|\n| Contagem | Confirmar se as 10 linhas incluem o cabeçalho. Se ele estiver incluído, são esperados 9 registros. Caso contrário, são esperados 10. | Conteúdo do CSV e confirmação sobre o cabeçalho. |\n| Campos obrigatórios | Confirmar quais campos o destino exige. Se `código` e `nome` forem obrigatórios, verificar se estão preenchidos em cada registro. | Valores das linhas e regras do destino. |\n| Duplicidades | Contar códigos repetidos no CSV e, se `código` for a chave do destino, verificar quais já existem lá. | Valores dos códigos, chave do destino e registros existentes. |\n| Reconciliação | Quando houver relatório de importação, conferir se todos os registros de dados estão contabilizados como aceitos, rejeitados ou ignorados. Se houver acesso ao destino e `código` for a chave, comparar os nomes dos registros aceitos com os do CSV. | Destino e relatório de importação. |"
+      "saida": "O CSV tem **10 linhas** informadas e dois campos, `código` e `nome`. São **9 registros se uma linha for o cabeçalho** ou **10 se todas as linhas forem de dados**, desde que cada linha de dados corresponda a um registro. O cabeçalho e o conteúdo das linhas não foram fornecidos.\n\n| Verificação | O que conferir | Dados ausentes |\n|---|---|---|\n| Contagem | Confirmar se há cabeçalho e contar os registros lidos. Se já houve importação, conferir quantos foram aceitos, rejeitados ou ignorados. | CSV completo e, se houver, relatório da importação. |\n| Campos obrigatórios | Confirmar quais campos o destino exige e verificar valores ausentes, vazios ou compostos apenas por espaços. | Regras do destino e valores de `código` e `nome`. |\n| Duplicidades | Verificar códigos repetidos no CSV. Se `código` for a chave no destino, verificar também se esses códigos já existem lá. | Valores do CSV, chave do destino e registros existentes. |\n| Reconciliação | Comparar os registros do CSV com os registros no destino pela chave confirmada. Para chaves correspondentes, conferir se o `nome` coincide. | Destino, chave de comparação e registros de ambos os lados. |\n\nUma diferença entre totais indica apenas uma diferença de contagem. Para determinar **quais e quantos registros individuais faltam**, é preciso comparar os conjuntos.\n\nNenhuma alteração foi executada."
     },
     "limitacoes": [
       "A saída exige revisão humana e não substitui validação no ambiente real."

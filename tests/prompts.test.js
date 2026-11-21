@@ -38,3 +38,26 @@ test('catálogo contém 15 prompts válidos e seus cinco casos', async () => {
     for (let i = 1; i <= 5; i++) await access(new URL(`../testes/${p.id}/entrada-${i}.md`, import.meta.url));
   }
 });
+
+test('resultados publicados correspondem às execuções da versão atual', async () => {
+  const prompts = JSON.parse(await readFile(new URL('../data/prompts.json', import.meta.url), 'utf8'));
+  for (const p of prompts) {
+    assert.equal(p.avaliacoes.length, 2, `${p.id}: devem existir dois modelos avaliados`);
+    assert.deepEqual(new Set(p.avaliacoes.map(a => a.modelo)), new Set(['gpt-6.2-sol', 'gpt-6-luna']));
+    for (const [label, modelo] of [['codex', 'gpt-6.2-sol'], ['economico', 'gpt-6-luna']]) {
+      const a = p.avaliacoes.find(x => x.modelo === modelo);
+      assert.equal(a.total, 5);
+      const suffix = p.versao === 'v1' ? '' : `-${p.versao}`;
+      for (let i = 1; i <= 5; i++) {
+        const input = (await readFile(new URL(`../testes/${p.id}/entrada-${i}.md`, import.meta.url), 'utf8')).replace(/^#.*\n\n/, '').trim();
+        const raw = JSON.parse(await readFile(new URL(`../testes/${p.id}/bruto-${label}${suffix}-${i}.txt`, import.meta.url), 'utf8'));
+        assert.equal(raw.modelo, modelo);
+        assert.equal(raw.prompt, p.prompt.replace('{entrada}', input));
+        assert.ok(nonempty(raw.stdout));
+        assert.match(raw.data, /^\d{4}-\d{2}-\d{2}T/);
+        assert.ok(nonempty(await readFile(new URL(`../testes/${p.id}/saida-${label}${suffix}-${i}.md`, import.meta.url), 'utf8')));
+      }
+    }
+    assert.ok(nonempty(await readFile(new URL(`../testes/${p.id}/avaliacao.md`, import.meta.url), 'utf8')));
+  }
+});

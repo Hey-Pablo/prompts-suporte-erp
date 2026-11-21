@@ -13,3 +13,5 @@ Um caso é aprovado somente com 3/3. A nota média é a soma das notas dividida 
 Mantenha a versão usada em cada execução. Ao detectar falha, registre o caso, a mudança e o motivo; crie a próxima versão e execute-a antes de declarar seu resultado. Guarde resultados anteriores para comparação. Registre limitações observadas, contexto, hipóteses e situações não cobertas; não generalize cinco casos para desempenho em produção.
 
 A comparação usa o modelo principal e o modelo econômico do ChatGPT. Execute os mesmos casos em cada modelo e registre o identificador exato exibido pelo CLI, sem atribuir resultados a modelos não executados.
+
+As saídas `saida-codex-N.md` e `saida-economico-N.md` pertencem à v1; arquivos com `-v2-` pertencem à v2. Os arquivos `bruto-*` guardam o prompt preenchido, a saída original do CLI, o modelo e a data UTC. Para prompts revisados, `prompt-v1.md` e `prompt-v2.md` preservam o texto das versões; a tabela de avaliação preserva as notas de ambas. O catálogo exibe as notas da versão atual. A avaliação é manual e subjetiva, feita sobre a resposta salva; não é uma medição estatística nem uma garantia de segurança ou correção fiscal.
