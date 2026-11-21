@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:41:15.477Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Faça até cinco perguntas objetivas e priorizadas para diagnosticar o relato, sem solicitar senhas ou dados pessoais desnecessários.\n\nDados:\nNão consigo entrar no sistema.",
+  "stdout": "O relato informa apenas que você não consegue entrar no sistema. Para identificar onde o acesso falha, preciso destes detalhes, em ordem de prioridade:\n\n1. Em que etapa o problema ocorre: ao abrir o ERP, ao enviar o login ou depois de entrar?\n2. O que aparece nessa etapa? Se houver uma mensagem de erro, informe o texto sem incluir dados pessoais.\n3. Quando o problema começou? Você já conseguiu acessar o ERP antes?\n4. Você sabe se outros usuários também estão com dificuldade para entrar?\n5. Você está acessando pelo navegador ou pelo aplicativo? Qual deles?\n"
+}

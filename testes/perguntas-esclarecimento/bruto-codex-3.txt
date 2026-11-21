@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:41:37.506Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Faça até cinco perguntas objetivas e priorizadas para diagnosticar o relato, sem solicitar senhas ou dados pessoais desnecessários.\n\nDados:\nA nota não imprime.",
+  "stdout": "O relato informa apenas que a nota não imprime. Faltam os detalhes abaixo, em ordem de prioridade:\n\n1. Ao clicar em **Imprimir**, aparece algum erro, abre a prévia ou nada acontece? Se houver erro, qual é a mensagem?\n2. O problema ocorre com essa nota ou também com outras?\n3. Qual é o tipo da nota (NF-e, NFC-e, NFS-e ou outro) e qual status o ERP exibe para ela?\n4. O ERP consegue gerar ou baixar o PDF da nota?\n5. A impressora selecionada consegue imprimir um documento de outro programa?\n"
+}

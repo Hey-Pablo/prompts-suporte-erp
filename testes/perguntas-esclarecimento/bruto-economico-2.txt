@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:41:31.066Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Faça até cinco perguntas objetivas e priorizadas para diagnosticar o relato, sem solicitar senhas ou dados pessoais desnecessários.\n\nDados:\nO estoque está errado.",
+  "stdout": "Para identificar a causa, preciso destas informações:\n\n1. Qual item está com saldo incorreto e em qual depósito ou local?\n2. Qual saldo aparece no ERP e qual deveria aparecer?\n3. Quando você percebeu a diferença? Ela ocorreu após alguma movimentação ou atualização?\n4. Há uma transação recente relacionada ao item, como entrada, saída, transferência ou ajuste? Se sim, qual tipo e data?\n5. O problema aparece em um relatório específico ou também na consulta do saldo do item?\n"
+}
