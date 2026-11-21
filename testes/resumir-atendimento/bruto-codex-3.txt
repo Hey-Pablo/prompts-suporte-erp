@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:30:06.785Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Resuma o histórico em Problema, Ações, Resultado e Pendências. Não invente resolução ou horários.\n\nDados:\nSolicitante pediu relatório; suporte pediu exemplo; sem resposta.",
+  "stdout": "**Problema**  \nO solicitante pediu um relatório. O tipo e os requisitos do relatório não foram informados.\n\n**Ações**  \nO suporte pediu um exemplo ao solicitante.\n\n**Resultado**  \nO solicitante não respondeu. Não há resolução registrada.\n\n**Pendências**  \nAguardar o envio do exemplo pelo solicitante.\n"
+}

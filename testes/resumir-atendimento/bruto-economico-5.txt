@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:30:34.149Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Resuma o histórico em Problema, Ações, Resultado e Pendências. Não invente resolução ou horários.\n\nDados:\nRelatos conflitantes: atendimento diz resolvido, usuário diz que falha persiste; não há teste final.",
+  "stdout": "**Problema:** Há relatos conflitantes sobre a falha: o atendimento informa que foi resolvida, mas o usuário diz que persiste.\n\n**Ações:** Não informadas.\n\n**Resultado:** Inconclusivo; não há teste final registrado.\n\n**Pendências:** Confirmar se a falha persiste por meio de um teste final e registrar o resultado.\n"
+}

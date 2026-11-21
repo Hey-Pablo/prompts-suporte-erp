@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:29:59.614Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Resuma o histórico em Problema, Ações, Resultado e Pendências. Não invente resolução ou horários.\n\nDados:\nImpressora não responde; reiniciada; teste ainda pendente.",
+  "stdout": "**Problema:** Impressora não responde.\n\n**Ações:** Impressora reiniciada.\n\n**Resultado:** Teste ainda pendente.\n\n**Pendências:** Realizar o teste e registrar o resultado. Horários não informados.\n"
+}

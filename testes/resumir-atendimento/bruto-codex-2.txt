@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:29:55.676Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Resuma o histórico em Problema, Ações, Resultado e Pendências. Não invente resolução ou horários.\n\nDados:\nImpressora não responde; reiniciada; teste ainda pendente.",
+  "stdout": "**Problema**  \nA impressora não responde.\n\n**Ações**  \nA impressora foi reiniciada.\n\n**Resultado**  \nO funcionamento após o reinício ainda não foi confirmado. Horários não informados.\n\n**Pendências**  \nTestar a impressora.\n"
+}
