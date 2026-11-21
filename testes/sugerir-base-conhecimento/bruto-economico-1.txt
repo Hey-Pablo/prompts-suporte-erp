@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:44:39.157Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Proponha até três termos de busca e informações necessárias para selecionar artigo. Não afirme que artigos existem.\n\nDados:\nErro de login após troca de senha.",
+  "stdout": "**Termos de busca sugeridos:**\n- Erro de login após troca de senha\n- Não consigo entrar com a senha nova\n- Problema de autenticação depois de redefinir a senha\n\n**Informações necessárias para selecionar um artigo:**\n- Nome ou versão do ERP\n- Mensagem de erro exibida\n- Se a senha foi alterada pelo próprio usuário ou por um administrador\n- Se o problema ocorre em todos os dispositivos ou apenas em um\n\nEsses dados não foram fornecidos.\n"
+}

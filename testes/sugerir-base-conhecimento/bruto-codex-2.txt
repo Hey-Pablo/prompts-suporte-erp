@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:44:46.151Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Proponha até três termos de busca e informações necessárias para selecionar artigo. Não afirme que artigos existem.\n\nDados:\nNF-e não aparece na impressão.",
+  "stdout": "**Termos de busca sugeridos**\n\n- `NF-e não aparece na impressão`\n- `NF-e não aparece na lista para impressão`\n- `NF-e ausente na pré-visualização de impressão`\n\n**Informações faltantes para selecionar um artigo**\n\n- Nome e versão do ERP, módulo e tela usados para imprimir.\n- Onde a NF-e deixa de aparecer: na lista de seleção, na pré-visualização ou na impressão final.\n- Status da NF-e, filtros aplicados, eventual mensagem de erro e se o problema afeta uma nota ou várias.\n"
+}

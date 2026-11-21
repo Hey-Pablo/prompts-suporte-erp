@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:44:51.607Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Proponha até três termos de busca e informações necessárias para selecionar artigo. Não afirme que artigos existem.\n\nDados:\nNF-e não aparece na impressão.",
+  "stdout": "**Termos de busca sugeridos:**\n\n- “NF-e não aparece na impressão”\n- “impressão de NF-e”\n- “documento fiscal ausente na impressão”\n\n**Informações necessárias para selecionar um artigo:**\n\n- Qual ERP e versão estão em uso?\n- A NF-e foi autorizada? Qual é o status dela no sistema?\n- Em qual tela ou relatório a impressão é feita?\n- O problema ocorre com uma NF-e específica ou com todas?\n- Há mensagem de erro ou a impressão sai sem o documento?\n\nNão há dados suficientes para identificar um artigo específico.\n"
+}
