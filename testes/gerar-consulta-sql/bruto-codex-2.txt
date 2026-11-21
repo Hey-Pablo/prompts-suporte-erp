@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:34:29.017Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Com base apenas no esquema fornecido, gere consulta SELECT de leitura e explique pressupostos. Não invente colunas; peça detalhes se faltarem. Use parâmetros para valores e evite alterações.\n\nDados:\nTabela chamados(id, status, criado_em): contar chamados por status.",
+  "stdout": "```sql\nSELECT\n    status,\n    COUNT(*) AS total_chamados\nFROM chamados\nGROUP BY status;\n```\n\nA consulta conta cada linha da tabela `chamados` no grupo do seu `status`. Se houver linhas com `status` nulo, elas serão contadas em um grupo próprio.\n\nComo não foi informado um período ou filtro de status, a consulta considera toda a tabela e não precisa de parâmetros.\n"
+}

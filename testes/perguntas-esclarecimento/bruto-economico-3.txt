@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:41:42.313Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Faça até cinco perguntas objetivas e priorizadas para diagnosticar o relato, sem solicitar senhas ou dados pessoais desnecessários.\n\nDados:\nA nota não imprime.",
+  "stdout": "1. Qual é a mensagem de erro exibida, se houver?\n2. A falha acontece com todas as notas ou apenas com uma?\n3. A nota aparece como autorizada e pronta para impressão no ERP?\n4. Outras impressões funcionam nessa mesma impressora?\n5. O problema começou após alguma alteração no ERP, na impressora ou na rede?\n\nCom os dados fornecidos, ainda não é possível identificar a causa.\n"
+}

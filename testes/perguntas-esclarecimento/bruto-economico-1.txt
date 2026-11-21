@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:41:19.802Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Faça até cinco perguntas objetivas e priorizadas para diagnosticar o relato, sem solicitar senhas ou dados pessoais desnecessários.\n\nDados:\nNão consigo entrar no sistema.",
+  "stdout": "1. Qual mensagem de erro aparece ao tentar entrar?\n2. Em que etapa o acesso falha: ao abrir o sistema, informar usuário ou carregar a página inicial?\n3. O problema acontece em outro navegador ou dispositivo?\n4. Você consegue acessar outros sites normalmente?\n5. Quando o problema começou e houve alguma mudança recente no acesso?\n"
+}

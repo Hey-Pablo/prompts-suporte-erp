@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:45:15.911Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Proponha até três termos de busca e informações necessárias para selecionar artigo. Não afirme que artigos existem.\n\nDados:\nRelatório financeiro sem dados.",
+  "stdout": "**Termos de busca sugeridos:**\n- Relatório financeiro sem dados\n- Relatório financeiro em branco\n- Dados ausentes no relatório financeiro\n\n**Informações necessárias para selecionar um artigo:**\n- Qual relatório financeiro e módulo do ERP?\n- Qual período e empresa/filial foram selecionados?\n- O relatório fica totalmente em branco ou apresenta valores zerados?\n- Há filtros aplicados ou mensagens de erro?\n"
+}

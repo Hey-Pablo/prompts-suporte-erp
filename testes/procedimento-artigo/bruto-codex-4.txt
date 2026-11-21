@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:32:37.422Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Converta o procedimento em artigo com objetivo, pré-requisitos, passos e verificação. Aponte lacunas sem inventar etapas.\n\nDados:\nAbra relatório de vendas, escolha período e exporte CSV.",
+  "stdout": "# Exportar o relatório de vendas em CSV\n\n## Objetivo\n\nExportar o relatório de vendas em formato CSV para o período escolhido.\n\n## Pré-requisitos\n\nO procedimento pressupõe acesso ao relatório de vendas. As permissões necessárias para abrir o relatório e exportá-lo não foram informadas.\n\n## Passos\n\n1. Abra o relatório de vendas.\n2. Escolha o período.\n3. Exporte o relatório em formato CSV.\n\n## Verificação\n\nO resultado esperado é um arquivo CSV com os dados do período escolhido. O procedimento fornecido não informa como confirmar a conclusão da exportação ou conferir o período no arquivo.\n\n## Lacunas\n\n- Caminho para abrir o relatório no ERP.\n- Localização dos controles para escolher o período e exportar o CSV.\n- Nome do arquivo e local onde ele fica disponível após a exportação.\n"
+}

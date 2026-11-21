@@ -1,0 +1,17 @@
+# Saída codex v2 — caso 1
+
+Modelo: gpt-6.2-sol
+
+Data: 2026-11-21T11:49:22.011Z
+
+## Checklist de atendimento — usuário sem acesso ao ERP
+
+**Relato inicial:** um usuário informa que não consegue acessar o ERP. Produto, versão, ambiente, etapa da falha, mensagem de erro e abrangência do impacto ainda são desconhecidos.
+
+1. **Registrar onde o acesso falha.** Anotar data, hora e fuso da ocorrência, o identificador corporativo do usuário, o ambiente (se conhecido) e a etapa em que o problema aparece: ao abrir o ERP, ao autenticar ou após entrar. Registrar a mensagem exata ou indicar que nenhuma mensagem foi exibida.
+2. **Verificar a abrangência.** Confirmar se outros usuários autorizados conseguem acessar o mesmo ambiente com suas próprias contas. Se isso não puder ser verificado, registrar a abrangência como desconhecida. Consultar o canal interno de incidentes ou manutenção, se houver.
+3. **Conferir os pré-requisitos conhecidos.** Confirmar se o usuário está usando o endereço ou aplicativo oficial. Verificar rede corporativa, VPN, autenticação corporativa e MFA apenas se forem requisitos confirmados. Marcar como desconhecidos os requisitos que ainda não puderem ser confirmados.
+4. **Coletar evidências pelas vias autorizadas.** Anexar captura com dados sensíveis ocultados, código do erro e identificador de correlação, se exibidos. Se houver acesso autorizado, consultar os registros no horário da falha e anexar somente o trecho pertinente. Nunca solicitar senhas, códigos de MFA ou tokens.
+5. **Evitar agravar a falha.** Se for necessário confirmar o sintoma, fazer uma única tentativa pelo fluxo oficial, desde que não haja aviso de bloqueio ou suspeita de comprometimento. Durante a triagem, evitar redefinições de senha, alterações de permissões e reinícios de serviços.
+
+**Escalonar** se vários usuários estiverem afetados, se houver impacto em uma operação crítica ou se a falha persistir após as verificações aplicáveis. Encaminhar à equipe responsável pelo ERP ou, quando a evidência indicar a etapa da falha, à equipe de identidade ou infraestrutura. Se houver indício de comprometimento, interromper as tentativas e acionar a equipe de segurança. Incluir no chamado o impacto, o horário, a etapa da falha, as evidências, as verificações realizadas e as dependências que continuam desconhecidas.

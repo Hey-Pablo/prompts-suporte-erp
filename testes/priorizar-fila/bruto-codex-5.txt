@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:36:59.532Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Ordene os chamados conforme impacto e urgência informados, justifique e explicite empates ou dados ausentes. Não invente SLA.\n\nDados:\nA: urgente sem impacto informado; B: impacto alto sem urgência informada; faltam dados para desempatar.",
+  "stdout": "**A e B ficam empatados provisoriamente na ordem de atendimento.**\n\n| Chamado | Impacto | Urgência |\n|---|---|---|\n| A | Não informado | Urgente |\n| B | Alto | Não informada |\n\nA urgência de A e o impacto alto de B sustentam a priorização de ambos. Para definir qual deve ser atendido primeiro, faltam o impacto de A e a urgência de B.\n"
+}

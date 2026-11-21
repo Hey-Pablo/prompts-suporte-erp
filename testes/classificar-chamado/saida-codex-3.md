@@ -1,0 +1,12 @@
+# Saída codex — caso 3
+
+Modelo: gpt-6.2-sol
+
+Data: 2026-11-21T11:25:27.029Z
+
+- **Fato:** O usuário solicita a inclusão de um campo em um relatório para o próximo mês.
+- **Categoria sugerida — Melhoria em relatório.** O pedido descreve a inclusão de um campo, sem mencionar falha no relatório atual.
+- **Impacto — Indeterminado.** O relato não informa quais usuários ou processos dependem do campo.
+- **Urgência — Baixa, provisoriamente.** A janela informada é o próximo mês, mas faltam a data exata e a consequência de um atraso.
+- **Prioridade sugerida — Baixa, provisoriamente.** A sugestão assume que não há bloqueio operacional nem prazo obrigatório. Essas condições ainda precisam ser confirmadas.
+- **Informações a confirmar:** Qual é o relatório? Qual campo deve ser incluído e de onde vem o dado? Quem precisa dele e para qual processo? Qual é a data-limite e o que acontece se ela não for cumprida?

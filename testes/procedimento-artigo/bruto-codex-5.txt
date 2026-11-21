@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:32:51.264Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Converta o procedimento em artigo com objetivo, pré-requisitos, passos e verificação. Aponte lacunas sem inventar etapas.\n\nDados:\nDesative o serviço, altere uma configuração não especificada e reinicie; não há validação descrita.",
+  "stdout": "# Alteração de configuração do serviço do ERP\n\n## Objetivo\n\nAlterar uma configuração do serviço do ERP e reiniciá-lo. O serviço e a configuração não foram identificados.\n\n## Pré-requisitos\n\nO procedimento fornecido não descreve pré-requisitos. Antes da execução, é necessário identificar o serviço, a configuração a alterar e o valor a aplicar.\n\n## Passos\n\n1. Desative o serviço. O método de desativação não foi informado.\n2. Altere a configuração. O parâmetro e o valor a aplicar não foram informados.\n3. Reinicie o serviço. O método de reinicialização não foi informado.\n\n## Verificação\n\nO procedimento não descreve como verificar se o serviço voltou a funcionar ou se a alteração foi aplicada.\n"
+}

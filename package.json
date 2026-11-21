@@ -1,0 +1,6 @@
+{
+  "name": "prompts-suporte-erp",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test" }
+}

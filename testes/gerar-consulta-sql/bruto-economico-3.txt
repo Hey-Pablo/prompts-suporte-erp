@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:34:44.797Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Com base apenas no esquema fornecido, gere consulta SELECT de leitura e explique pressupostos. Não invente colunas; peça detalhes se faltarem. Use parâmetros para valores e evite alterações.\n\nDados:\nTabela vendas(id, valor, data): somar valor entre :inicio e :fim.",
+  "stdout": "```sql\nSELECT SUM(valor) AS total_valor\nFROM vendas\nWHERE data >= :inicio\n  AND data <= :fim;\n```\n\nPressupostos: `data` permite comparação com os parâmetros `:inicio` e `:fim`; o intervalo inclui as duas datas. Se a intenção for outro tipo de intervalo, informe os limites desejados. Sem mais detalhes, não presumo tipo de dado ou formato dos parâmetros.\n"
+}

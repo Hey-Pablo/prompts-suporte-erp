@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:44:58.175Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Proponha até três termos de busca e informações necessárias para selecionar artigo. Não afirme que artigos existem.\n\nDados:\nSaldo de estoque divergente depois de importação.",
+  "stdout": "**Termos de busca sugeridos**\n\n- Saldo de estoque divergente após importação\n- Divergência de estoque após importação de dados\n- Conferência de saldo de estoque após importação\n\n**Informações ausentes para selecionar um artigo**\n\n- Nome e versão do ERP.\n- Tipo de dados importados e rotina usada na importação.\n- Saldo esperado, saldo exibido e onde a divergência foi identificada, como na tela ou no relatório consultado.\n- Produtos e depósitos afetados, além de eventuais mensagens de erro ou avisos da importação.\n"
+}

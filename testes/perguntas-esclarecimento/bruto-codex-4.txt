@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:41:48.825Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Faça até cinco perguntas objetivas e priorizadas para diagnosticar o relato, sem solicitar senhas ou dados pessoais desnecessários.\n\nDados:\nO relatório está lento.",
+  "stdout": "Faltam o nome do relatório, o tempo de execução, o momento em que a lentidão começou, as condições em que ocorre e o alcance do problema.\n\n1. Qual relatório está lento e em qual módulo ou tela do ERP ele é executado?\n2. Quanto tempo o relatório leva hoje e quanto costumava levar? A lentidão ocorre ao gerar, abrir ou exportar?\n3. Desde quando isso acontece? Ocorre em todas as execuções ou apenas em determinados horários?\n4. Quais filtros e período foram usados? A execução melhora com um período menor?\n5. A lentidão também ocorre para outros usuários ou em outros relatórios?\n"
+}

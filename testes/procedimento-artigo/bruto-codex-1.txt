@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:31:56.402Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Converta o procedimento em artigo com objetivo, pré-requisitos, passos e verificação. Aponte lacunas sem inventar etapas.\n\nDados:\nAbra Configurações, selecione Impressoras, escolha Padrão e salve.",
+  "stdout": "# Configurar a opção Padrão em Impressoras\n\n## Objetivo\n\nSelecionar a opção **Padrão** em **Impressoras** e salvar a configuração.\n\n## Pré-requisitos\n\nOs dados fornecidos não especificam permissões de acesso nem requisitos de configuração prévia.\n\n## Passos\n\n1. Abra **Configurações**.\n2. Selecione **Impressoras**.\n3. Escolha **Padrão**.\n4. Salve a configuração.\n\n## Verificação\n\nO procedimento não informa como confirmar que a configuração foi salva nem qual resultado deve aparecer após salvar.\n"
+}

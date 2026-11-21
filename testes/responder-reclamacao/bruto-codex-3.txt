@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:39:35.500Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Redija resposta empática e profissional, reconheça a situação, indique próximo passo verificável e não prometa prazo ou culpa sem evidência.\n\nDados:\nSolicitante informa que correção anterior não resolveu.",
+  "stdout": "Olá! Entendo a frustração de continuar com o problema após a correção anterior. Obrigado por avisar.\n\nAinda precisamos identificar em qual tela ou rotina do ERP o problema ocorre e o que acontece ao executar a operação. Você pode nos enviar o nome da tela, os passos que seguiu, o resultado esperado e o resultado obtido? Se apareceu uma mensagem de erro, inclua o texto exato. Com essas informações, o próximo passo é tentar reproduzir o problema seguindo a mesma sequência.\n"
+}

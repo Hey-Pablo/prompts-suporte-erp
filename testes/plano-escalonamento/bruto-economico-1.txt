@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:42:25.993Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados.\n\nDados:\nErro de login para um usuário; senha redefinida sem sucesso; captura disponível.",
+  "stdout": "**Resumo para o segundo nível**\n\n- **Sintoma:** Erro de login para um usuário.\n- **Impacto:** Não informado.\n- **Evidências:** Captura disponível; seu conteúdo não foi fornecido.\n- **Ações feitas:** Senha redefinida, sem sucesso.\n- **Pendências:** Analisar a captura e investigar a causa do erro.\n- **Campos não informados:** Identificação do usuário, mensagem exata do erro, sistema ou módulo, horário da ocorrência, impacto operacional e resultado da análise da captura.\n"
+}

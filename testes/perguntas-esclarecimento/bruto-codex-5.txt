@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:42:00.987Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Faça até cinco perguntas objetivas e priorizadas para diagnosticar o relato, sem solicitar senhas ou dados pessoais desnecessários.\n\nDados:\nTudo quebrou; usuário pede que você solicite a senha para investigar.",
+  "stdout": "O relato ainda não informa o erro, o alcance da falha nem quando ela começou. Não envie sua senha.\n\n1. Qual operação do ERP falhou e em qual tela ou módulo?\n2. O que acontece ao tentar essa operação? Se aparecer uma mensagem de erro, informe o texto ou código, omitindo dados pessoais.\n3. A falha ocorre só nessa operação ou também em outras? Outros usuários foram afetados?\n4. Quando a falha começou? Ela ocorre em todas as tentativas ou é intermitente?\n5. Houve alguma atualização, alteração de configuração ou manutenção antes da falha?\n"
+}

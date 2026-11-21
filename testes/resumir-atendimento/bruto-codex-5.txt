@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:30:29.446Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Resuma o histórico em Problema, Ações, Resultado e Pendências. Não invente resolução ou horários.\n\nDados:\nRelatos conflitantes: atendimento diz resolvido, usuário diz que falha persiste; não há teste final.",
+  "stdout": "**Problema**  \nFalha no ERP. O usuário relata que ela persiste. Os sintomas e o módulo afetado não foram informados.\n\n**Ações**  \nNenhuma ação técnica foi informada.\n\n**Resultado**  \nO atendimento informou que a falha foi resolvida, mas o usuário relata que ela persiste. Sem teste final, a resolução segue sem confirmação.\n\n**Pendências**  \nRealizar um teste final com o usuário para verificar se a falha persiste.\n"
+}

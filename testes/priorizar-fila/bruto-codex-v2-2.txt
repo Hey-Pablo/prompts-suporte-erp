@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:51:58.330Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Ordene os chamados conforme impacto e urgência informados, justifique e explicite empates ou dados ausentes. Não invente SLA. Dê uma ordem provisória quando os dados sustentarem comparação, inclusive quando um item é descrito sem impacto; se não sustentarem, explique empate ou indeterminação.\n\nDados:\nA: um usuário sem acesso hoje; B: filial inteira sem rede agora.",
+  "stdout": "**Ordem provisória: B → A.**\n\n1. **B — Filial inteira sem rede agora.** Tem o maior impacto informado, pois afeta toda a filial. A indisponibilidade está ocorrendo agora.\n2. **A — Um usuário sem acesso hoje.** O impacto informado se limita a um usuário. A descrição situa o problema no dia de hoje, mas não informa o horário de início nem um prazo para restabelecer o acesso.\n\nO impacto informado sustenta a ordem, sem empate na prioridade provisória. Faltam dados para comparar a urgência com precisão, como prazos de restabelecimento ou consequências da espera. Nenhum SLA foi informado.\n"
+}

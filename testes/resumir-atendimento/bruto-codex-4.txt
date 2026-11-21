@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:30:18.170Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Resuma o histórico em Problema, Ações, Resultado e Pendências. Não invente resolução ou horários.\n\nDados:\nEstoque divergente; conferência iniciada; encaminhado ao setor responsável.",
+  "stdout": "**Problema**  \nDivergência no estoque.\n\n**Ações**  \nA conferência foi iniciada e o caso foi encaminhado ao setor responsável.\n\n**Resultado**  \nO resultado da conferência e a resolução da divergência não foram informados.\n\n**Pendências**  \nConfirmar o resultado da conferência e obter o retorno do setor responsável. Horários não informados.\n"
+}

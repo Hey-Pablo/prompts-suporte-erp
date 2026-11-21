@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:32:30.121Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Converta o procedimento em artigo com objetivo, pré-requisitos, passos e verificação. Aponte lacunas sem inventar etapas.\n\nDados:\nFaça backup conforme política local; depois importe o arquivo de teste.",
+  "stdout": "# Importar arquivo de teste\n\n## Objetivo\nImportar o arquivo de teste no ERP após fazer um backup.\n\n## Pré-requisitos\n- Conhecer e seguir a política local de backup.\n- Ter o arquivo de teste disponível.\n- **Dado ausente:** não foram informados o local do arquivo nem os requisitos de acesso ao ERP.\n\n## Passos\n1. Faça backup conforme a política local.\n2. Importe o arquivo de teste.\n\n## Verificação\n**Dado ausente:** não foi informado como confirmar que o backup foi concluído nem que a importação foi bem-sucedida.\n\n## Lacunas\nNão foram fornecidos os detalhes do procedimento de backup ou de importação, nem os critérios de sucesso. Não acrescentei etapas além das informadas.\n"
+}

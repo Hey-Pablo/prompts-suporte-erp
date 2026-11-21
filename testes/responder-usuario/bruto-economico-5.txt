@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:31:33.200Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Redija resposta cordial e objetiva ao usuário com situação, próximo passo e prazo apenas se informado. Não prometa solução.\n\nDados:\nUsuário informa perda de dados; causa e recuperação ainda não foram confirmadas.",
+  "stdout": "Olá! Recebemos seu relato de perda de dados. A causa e a possibilidade de recuperação ainda não foram confirmadas. Assim que houver uma atualização, informaremos os próximos passos. Ainda não há prazo informado.\n"
+}

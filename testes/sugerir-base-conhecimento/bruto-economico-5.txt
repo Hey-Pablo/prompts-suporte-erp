@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:45:28.562Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Proponha até três termos de busca e informações necessárias para selecionar artigo. Não afirme que artigos existem.\n\nDados:\nUsuário diz apenas erro 12 e não informa sistema ou mensagem.",
+  "stdout": "**Termos de busca sugeridos:**\n- `\"erro 12\" + nome do ERP`\n- `\"erro 12\" + módulo ou rotina`\n- Trecho exato da mensagem, se houver\n\n**Informações necessárias para selecionar um artigo:**\n- Nome do sistema ERP e, se souber, versão\n- Módulo ou ação em que o erro ocorre\n- Mensagem completa ou captura de tela\n- Quando começou e se ocorre sempre ou em uma situação específica\n\nCom apenas “erro 12”, não há dados suficientes para identificar um artigo.\n"
+}

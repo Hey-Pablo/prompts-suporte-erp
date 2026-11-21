@@ -12,7 +12,7 @@ Engenharia de prompts com método: teste, critério de qualidade, comparação e
 
 ## Stack
 
-Claude e ChatGPT para os testes. Site estático em HTML, CSS e JavaScript lendo um JSON. GitHub Pages.
+Modelos principal e econômico do ChatGPT para os testes. Site estático em HTML, CSS e JavaScript lendo um JSON. GitHub Pages.
 
 ## Estrutura
 
@@ -32,7 +32,7 @@ prompts-suporte-erp/
 1. Liste 20 tarefas que você fazia à mão e escolha as 15 mais frequentes.
 2. Escreva a versão 1 de cada prompt com objetivo, contexto, formato de saída e variáveis entre chaves.
 3. Crie 5 entradas fictícias por prompt, incluindo um caso difícil.
-4. Rode em dois modelos e guarde as saídas.
+4. Rode nos modelos principal e econômico e guarde as saídas.
 5. Avalie com rubrica de 3 critérios: correto, completo e no formato pedido.
 6. Reescreva os que falharam (versão 2) e registre o que mudou e por quê.
 7. Monte o site: busca, filtro, botão de copiar, exemplo de entrada e saída, nota e limitações.

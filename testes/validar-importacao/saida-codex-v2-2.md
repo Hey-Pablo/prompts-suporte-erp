@@ -1,0 +1,16 @@
+# Saída codex v2 — caso 2
+
+Modelo: gpt-6.2-sol
+
+Data: 2026-11-21T11:56:55.588Z
+
+O arquivo de produtos tem **20 linhas** e há **códigos repetidos**. Como não foi informado se a contagem inclui um cabeçalho, o total de registros de produto ainda precisa ser confirmado. Também não foram informados quais códigos se repetem nem quantas vezes.
+
+| Verificação | O que conferir | Dados necessários |
+|---|---|---|
+| Contagem | Confirmar se há cabeçalho e contar separadamente as linhas do arquivo e os registros de produto. | Conteúdo do arquivo ou confirmação sobre o cabeçalho e a presença de linhas vazias. |
+| Campos obrigatórios | Conferir se cada registro preenche os campos exigidos pelo ERP e identificar as linhas com campos vazios. | Layout de importação do ERP e conteúdo do arquivo. |
+| Duplicidades | Agrupar por código, contar as ocorrências e identificar as linhas envolvidas. Conferir se os demais campos coincidem ou divergem. | Conteúdo do arquivo e regra do ERP para códigos repetidos. |
+| Reconciliação | Se já houve uma tentativa de importação, comparar os registros do arquivo com os resultados do ERP usando a chave de importação e, se disponível, a referência à linha de origem. | Chave de importação e relatório do ERP com os resultados por registro. |
+
+Uma diferença entre os totais do arquivo e do ERP indica apenas uma divergência de contagem. Para saber quais e quantos registros individuais faltam, é preciso comparar os conjuntos. Nenhuma alteração foi executada.

@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:39:29.159Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Redija resposta empática e profissional, reconheça a situação, indique próximo passo verificável e não prometa prazo ou culpa sem evidência.\n\nDados:\nUsuário diz que precisou repetir os dados três vezes.",
+  "stdout": "Entendo a frustração de ter precisado repetir os dados três vezes. Para verificarmos o ocorrido, o próximo passo é confirmar em quais etapas ou telas você precisou informá-los novamente.\n"
+}

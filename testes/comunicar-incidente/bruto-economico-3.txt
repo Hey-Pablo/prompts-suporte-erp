@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:43:56.716Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Produza comunicado com serviço afetado, impacto conhecido, estado e próxima atualização somente se informada. Distinga hipótese de fato.\n\nDados:\nImportação restaurada após teste; monitoramento em curso.",
+  "stdout": "**Comunicado de suporte**\n\n- **Serviço afetado:** Importação\n- **Impacto conhecido:** Não informado\n- **Estado:** Serviço restaurado após teste; monitoramento em curso\n- **Próxima atualização:** Não informada\n"
+}

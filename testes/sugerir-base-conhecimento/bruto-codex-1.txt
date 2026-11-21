@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:44:32.272Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Proponha até três termos de busca e informações necessárias para selecionar artigo. Não afirme que artigos existem.\n\nDados:\nErro de login após troca de senha.",
+  "stdout": "**Termos de busca sugeridos**\n\n- “ERP erro de login após troca de senha”\n- “ERP falha de autenticação após alteração de senha”\n\n**Informações ausentes para selecionar um artigo**\n\n- Nome e versão do ERP.\n- Mensagem exata ou código do erro.\n- Forma de acesso ao ERP, como navegador ou aplicativo, e tipo de autenticação, se conhecido.\n- Como a senha foi alterada, por exemplo, pelo próprio usuário ou por redefinição administrativa.\n- Se o erro ocorre em todas as tentativas e se afeta outros usuários.\n"
+}

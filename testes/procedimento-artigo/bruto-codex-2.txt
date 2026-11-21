@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:32:11.859Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Converta o procedimento em artigo com objetivo, pré-requisitos, passos e verificação. Aponte lacunas sem inventar etapas.\n\nDados:\nNo menu Usuários, selecione conta e marque Ativo; confirme com teste de acesso.",
+  "stdout": "# Ativar uma conta de usuário no ERP\n\n## Objetivo\n\nAtivar uma conta de usuário e confirmar a ativação com um teste de acesso.\n\n## Pré-requisitos\n\nOs dados fornecidos não especificam as permissões necessárias nem como identificar a conta correta.\n\n## Passos\n\n1. No menu **Usuários**, selecione a conta.\n2. Marque a opção **Ativo**.\n\n## Verificação\n\nFaça um teste de acesso com a conta selecionada. Se o acesso funcionar, a ativação está confirmada.\n\n## Lacunas\n\nO procedimento não informa se é necessário salvar ou confirmar a alteração, como executar o teste de acesso ou o que fazer se ele falhar.\n"
+}
