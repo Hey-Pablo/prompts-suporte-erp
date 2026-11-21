@@ -1,5 +1,7 @@
 # Biblioteca de Prompts Testados
 
+> **Demonstração:** https://hey-pablo.github.io/prompts-suporte-erp/
+
 Quinze prompts para tarefas reais de suporte e ERP, cada um com cinco casos de teste fictícios, saídas guardadas, nota por rubrica e histórico de versões, publicados num site estático com busca.
 
 ## Problema
