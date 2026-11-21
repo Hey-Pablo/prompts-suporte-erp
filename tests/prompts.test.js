@@ -61,3 +61,25 @@ test('resultados publicados correspondem às execuções da versão atual', asyn
     assert.ok(nonempty(await readFile(new URL(`../testes/${p.id}/avaliacao.md`, import.meta.url), 'utf8')));
   }
 });
+
+test('notas agregadas refletem a rubrica da versão atual', async () => {
+  const prompts = JSON.parse(await readFile(new URL('../data/prompts.json', import.meta.url), 'utf8'));
+  for (const p of prompts) {
+    const report = await readFile(new URL(`../testes/${p.id}/avaliacao.md`, import.meta.url), 'utf8');
+    const section = p.versao === 'v2' ? report.split('## Avaliação da versão v2')[1] : report;
+    assert.ok(section, `${p.id}: avaliação da versão atual ausente`);
+    for (const a of p.avaliacoes) {
+      const scores = section.split('\n').filter(line => line.startsWith(`| ${a.modelo} |`)).map(line => {
+        const columns = line.split('|').map(x => x.trim());
+        const criteria = columns.slice(3, 6).map(Number);
+        assert.ok(criteria.every(x => x === 0 || x === 1));
+        const total = criteria.reduce((sum, x) => sum + x, 0);
+        assert.equal(columns[6], `${total}/3`);
+        return total;
+      });
+      assert.equal(scores.length, a.total, `${p.id}: número de casos de ${a.modelo}`);
+      assert.equal(scores.filter(n => n === 3).length, a.aprovados);
+      assert.equal(scores.reduce((sum, n) => sum + n, 0) / scores.length, a.nota_media);
+    }
+  }
+});
