@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:29:16.160Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Classifique o relato por categoria, impacto, urgência e prioridade sugerida. Separe fatos de suposições; peça informação ausente. Responda em tópicos com justificativa.\n\nDados:\nIntegração de estoque parou para uma filial, sem prazo de retorno.",
+  "stdout": "- **Categoria:** Integração de estoque.\n- **Impacto:** Afeta uma filial; não há dados sobre volume, processos interrompidos ou impacto financeiro.\n- **Urgência:** Indeterminada. Não foi informado há quanto tempo a integração está parada nem se há uma solução temporária.\n- **Prioridade sugerida:** **A definir após triagem**. O problema está restrito a uma filial, mas a ausência de prazo de retorno exige avaliar a criticidade dos processos afetados.\n- **Fatos informados:** A integração de estoque parou para uma filial e não há prazo de retorno.\n- **Suposições:** Nenhuma.\n- **Informações necessárias:** Qual filial? Desde quando a integração está parada? Quais processos ou usuários foram afetados? Há alternativa manual ou outro impacto operacional?\n"
+}

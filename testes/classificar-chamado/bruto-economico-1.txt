@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:28:53.809Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Classifique o relato por categoria, impacto, urgência e prioridade sugerida. Separe fatos de suposições; peça informação ausente. Responda em tópicos com justificativa.\n\nDados:\nUma pessoa não consegue imprimir uma nota; outras imprimem.",
+  "stdout": "- **Categoria:** impressão de nota fiscal (ERP).\n- **Impacto:** aparentemente restrito a uma pessoa; outras conseguem imprimir. O alcance exato e o efeito no trabalho não foram informados.\n- **Urgência:** indeterminada. Não há informação sobre prazo, bloqueio de processo ou impacto financeiro.\n- **Prioridade sugerida:** **a confirmar**. O relato indica escopo limitado, mas faltam dados para avaliar urgência e criticidade.\n\n**Fatos**\n- Uma pessoa não consegue imprimir uma nota.\n- Outras pessoas conseguem imprimir.\n\n**Suposições**\n- Pode ser algo específico do usuário ou da estação, mas o relato não permite confirmar a causa.\n\n**Informações necessárias**\n- Qual mensagem de erro aparece e em que etapa ocorre?\n- A pessoa consegue imprimir outras notas? O problema acontece em outro computador ou impressora?\n- A nota é urgente? Há prazo ou processo bloqueado?\n- Outros usuários conseguem imprimir essa mesma nota?\n"
+}
