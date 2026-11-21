@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:53:17.440Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Classifique o relato por categoria, impacto, urgência e prioridade sugerida. Separe fatos de suposições; peça informação ausente. Responda em tópicos com justificativa. Não atribua tipo fiscal à nota nem afirme que vendas pararam sem confirmação; identifique hipóteses explicitamente.\n\nDados:\nERP indisponível para todos os caixas há 20 minutos.",
+  "stdout": "- **Categoria sugerida:** Indisponibilidade do ERP / acesso aos caixas.\n- **Impacto:** Alto — o relato informa que o ERP está indisponível para todos os caixas.\n- **Urgência:** Alta — a indisponibilidade dura há 20 minutos.\n- **Prioridade sugerida:** Alta, sujeita à matriz de prioridades do suporte, que não foi fornecida.\n\n- **Fatos informados:** ERP indisponível para todos os caixas há 20 minutos.\n- **Não confirmado:** Se as vendas pararam ou se há alguma alternativa operacional.\n- **Informações ausentes:** Horário de início, mensagens de erro, unidades afetadas, se outros usuários conseguem acessar o ERP e se há contingência disponível.\n\n**Justificativa:** A indisponibilidade relatada abrange todos os caixas e está em curso. Isso indica impacto amplo e urgência, mas não confirma interrupção das vendas.\n"
+}
