@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:37:04.557Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Ordene os chamados conforme impacto e urgência informados, justifique e explicite empates ou dados ausentes. Não invente SLA.\n\nDados:\nA: urgente sem impacto informado; B: impacto alto sem urgência informada; faltam dados para desempatar.",
+  "stdout": "Não há dados suficientes para ordenar A e B com segurança.\n\n- **A:** urgência informada como urgente; impacto ausente.\n- **B:** impacto informado como alto; urgência ausente.\n\nComo falta um dos critérios para cada chamado, não é possível comparar a prioridade entre eles. **Empate ou ordem não determinados**; não há dados de SLA.\n"
+}

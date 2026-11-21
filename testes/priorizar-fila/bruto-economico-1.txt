@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:36:18.612Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Ordene os chamados conforme impacto e urgência informados, justifique e explicite empates ou dados ausentes. Não invente SLA.\n\nDados:\nA: todos os caixas parados agora; B: dúvida de relatório sem prazo.",
+  "stdout": "1. **Chamado A — prioridade mais alta:** todos os caixas estão parados agora, indicando impacto amplo e urgência imediata.\n2. **Chamado B — prioridade mais baixa:** é uma dúvida sobre relatório e não há prazo informado.\n\n**Dados ausentes:** não foram informados outros impactos, prazos ou critérios de prioridade. Não é possível definir um SLA.\n"
+}

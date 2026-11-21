@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:36:36.924Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Ordene os chamados conforme impacto e urgência informados, justifique e explicite empates ou dados ausentes. Não invente SLA.\n\nDados:\nA: relatório errado amanhã; B: erro visual sem impacto.",
+  "stdout": "**A → B**, em ordem provisória de atendimento.\n\n| Posição | Chamado | Justificativa | Dados ausentes |\n|---|---|---|---|\n| 1 | A | O erro no relatório tem referência a amanhã, o único indicador temporal informado. | Impacto do erro e o que deve acontecer amanhã. |\n| 2 | B | O erro é visual e foi informado como sem impacto. | Urgência ou prazo. |\n\nNenhum empate pode ser confirmado com os dados disponíveis.\n"
+}

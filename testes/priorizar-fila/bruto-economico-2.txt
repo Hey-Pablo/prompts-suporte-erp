@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:36:30.072Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Ordene os chamados conforme impacto e urgência informados, justifique e explicite empates ou dados ausentes. Não invente SLA.\n\nDados:\nA: um usuário sem acesso hoje; B: filial inteira sem rede agora.",
+  "stdout": "1. **B — filial inteira sem rede agora.** Afeta uma filial inteira e está ocorrendo agora, então tem maior impacto e urgência informados.\n2. **A — um usuário sem acesso hoje.** Afeta um usuário; “hoje” indica urgência, mas não informa quando o problema começou.\n\nNão há empate com os dados fornecidos. Não foi informado SLA.\n"
+}
