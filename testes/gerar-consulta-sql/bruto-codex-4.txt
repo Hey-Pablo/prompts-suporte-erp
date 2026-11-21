@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:34:49.959Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Com base apenas no esquema fornecido, gere consulta SELECT de leitura e explique pressupostos. Não invente colunas; peça detalhes se faltarem. Use parâmetros para valores e evite alterações.\n\nDados:\nTabela usuarios(id, nome, ativo): listar nomes ativos.",
+  "stdout": "```sql\nSELECT nome\nFROM usuarios\nWHERE ativo = :valor_ativo;\n```\n\nVincule `:valor_ativo` ao valor que representa um usuário ativo. O esquema fornecido não informa o tipo da coluna `ativo` nem o valor usado para indicar atividade. Qual é esse valor no seu ERP?\n"
+}

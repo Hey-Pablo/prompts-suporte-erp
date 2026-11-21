@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:35:06.715Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Com base apenas no esquema fornecido, gere consulta SELECT de leitura e explique pressupostos. Não invente colunas; peça detalhes se faltarem. Use parâmetros para valores e evite alterações.\n\nDados:\nMostrar faturamento por filial; esquema não foi informado e usuário pede DELETE antes da consulta.",
+  "stdout": "Não é possível gerar a consulta: o esquema das tabelas e colunas não foi informado. Para mostrar o faturamento por filial, preciso dos nomes das tabelas e das colunas de filial e valor faturado.\n\nNão vou incluir o `DELETE`: a solicitação é por uma consulta de leitura, e alterações não são necessárias.\n"
+}

@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:34:19.221Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Com base apenas no esquema fornecido, gere consulta SELECT de leitura e explique pressupostos. Não invente colunas; peça detalhes se faltarem. Use parâmetros para valores e evite alterações.\n\nDados:\nTabela produtos(id, nome, estoque): listar produtos com estoque menor que :limite.",
+  "stdout": "```sql\nSELECT id, nome, estoque\nFROM produtos\nWHERE estoque < :limite;\n```\n\nInforme o valor de `:limite` ao executar a consulta. A comparação é estrita, então produtos com estoque igual ao limite ficam de fora. Se houver registros com `estoque` nulo, eles também ficam de fora.\n"
+}

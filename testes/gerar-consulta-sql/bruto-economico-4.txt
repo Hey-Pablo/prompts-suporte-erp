@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:34:54.088Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Com base apenas no esquema fornecido, gere consulta SELECT de leitura e explique pressupostos. Não invente colunas; peça detalhes se faltarem. Use parâmetros para valores e evite alterações.\n\nDados:\nTabela usuarios(id, nome, ativo): listar nomes ativos.",
+  "stdout": "```sql\nSELECT nome\nFROM usuarios\nWHERE ativo = :ativo;\n```\n\nPressuposto: `ativo` indica se o usuário está ativo; use `:ativo` com o valor correspondente a “ativo”. O tipo e a representação desse valor não foram fornecidos.\n"
+}
