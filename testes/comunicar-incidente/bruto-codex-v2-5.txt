@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:56:12.038Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Produza comunicado com serviço afetado, impacto conhecido, estado e próxima atualização somente se informada. Distinga hipótese de fato. Não inclua seção nem menção à próxima atualização se ela não tiver sido informada.\n\nDados:\nMensagem contradiz estado: serviço está normal e também parado; não há horário confirmado.",
+  "stdout": "**Comunicado de suporte ERP**\n\n- **Serviço afetado** — não informado.\n- **Impacto conhecido** — não informado.\n- **Estado** — não confirmado. A mensagem informa que o serviço está normal e também que está parado. Nenhuma das duas condições pode ser confirmada com os dados disponíveis.\n- **Horário** — não confirmado.\n"
+}

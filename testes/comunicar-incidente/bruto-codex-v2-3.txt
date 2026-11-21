@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:55:52.053Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Produza comunicado com serviço afetado, impacto conhecido, estado e próxima atualização somente se informada. Distinga hipótese de fato. Não inclua seção nem menção à próxima atualização se ela não tiver sido informada.\n\nDados:\nImportação restaurada após teste; monitoramento em curso.",
+  "stdout": "**Serviço afetado:** Importação no ERP.\n\n**Impacto conhecido:** Não informado.\n\n**Estado:** A importação foi restaurada após um teste. O monitoramento segue em curso.\n"
+}
