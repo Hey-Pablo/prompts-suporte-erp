@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:55:12.752Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados. No impacto registre explicitamente a quantidade ou abrangência informada, distinguindo-a de impacto operacional desconhecido.\n\nDados:\nUsuário afirma que houve vazamento, mas não forneceu evidências; não investigue nem afirme ocorrência.",
+  "stdout": "**Resumo para suporte de segundo nível**\n\n| Campo | Registro |\n|---|---|\n| Sintoma | Usuário relata suspeita de vazamento. A ocorrência não foi confirmada. |\n| Impacto | Quantidade e abrangência não informadas. Impacto operacional desconhecido. |\n| Evidências | Nenhuma evidência foi fornecida pelo usuário. |\n| Ações feitas | Ações anteriores não informadas. Nenhuma investigação foi realizada nesta triagem. |\n| Pendências | Evidências, data e horário, módulo ou ambiente, dados supostamente envolvidos, quantidade ou abrangência e impacto operacional. |\n"
+}

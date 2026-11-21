@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:54:21.030Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados. No impacto registre explicitamente a quantidade ou abrangência informada, distinguindo-a de impacto operacional desconhecido.\n\nDados:\nErro de login para um usuário; senha redefinida sem sucesso; captura disponível.",
+  "stdout": "## Resumo para suporte de segundo nível\n\n- **Sintoma:** erro de login no ERP. A mensagem exata do erro não foi informada.\n- **Impacto:** 1 usuário com erro de login. O impacto operacional é desconhecido.\n- **Evidências:** captura de tela disponível. O conteúdo da captura não foi fornecido.\n- **Ações realizadas:** a senha foi redefinida, mas o erro de login persistiu.\n- **Pendências:** anexar a captura e confirmar os campos não informados: identificador do usuário, ambiente do ERP, data e hora da ocorrência, mensagem exata do erro e impacto operacional.\n"
+}

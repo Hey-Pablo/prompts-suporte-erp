@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:55:06.057Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados. No impacto registre explicitamente a quantidade ou abrangência informada, distinguindo-a de impacto operacional desconhecido.\n\nDados:\nRelatório retorna vazio; filtros revisados; falta acesso ao banco.",
+  "stdout": "## Resumo para segundo nível\n\n- **Sintoma:** O relatório retorna vazio.\n- **Impacto informado:** Não foi informada quantidade de usuários, registros ou unidades afetadas. O impacto operacional é desconhecido.\n- **Evidências:** Filtros revisados. Não há outras evidências informadas.\n- **Ações feitas:** Revisão dos filtros.\n- **Pendências:** Falta acesso ao banco de dados para investigação.\n- **Campos não informados:** Nome do relatório, período consultado, usuário afetado, ambiente, horário em que ocorre e resultado esperado.\n"
+}
