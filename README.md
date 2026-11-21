@@ -1,53 +1,68 @@
 # Biblioteca de Prompts Testados
 
-> **Status: em desenvolvimento.** O código entra aos poucos; abaixo está o planejamento do projeto.
+Quinze prompts para tarefas reais de suporte e ERP, cada um com cinco casos de teste fictícios, saídas guardadas, nota por rubrica e histórico de versões, publicados num site estático com busca.
 
-## O que é
+## Problema
 
-Site com 15 a 20 prompts para tarefas reais de suporte e ERP, cada um com casos de teste, saída obtida, nota de avaliação e histórico de versões. Exemplos: classificar chamado, resumir atendimento, redigir resposta ao usuário, transformar procedimento em artigo, explicar rejeição de NF-e em linguagem simples, gerar consulta SQL a partir de uma descrição.
+Prompts de IA costumam ser compartilhados como texto solto, sem evidência de que funcionam. Quem usa não sabe em quais casos o prompt falha nem o que mudou entre versões.
 
-## O que prova
+## Solução
 
-Engenharia de prompts com método: teste, critério de qualidade, comparação entre modelos e registro de limitações.
+Cada prompt passa por um método simples e repetível: cinco entradas fictícias (uma difícil), execução em dois modelos, avaliação manual com rubrica de três critérios (correto, completo e no formato pedido; só 3/3 aprova), reescrita dos que falharam e registro do que mudou e por quê. O site mostra o resultado: nota por modelo, exemplo de entrada e saída, limitações e versões anteriores, com botão para copiar o prompt.
 
-## Stack
+![Site no desktop](docs/screenshot-desktop.png)
 
-Modelos principal e econômico do ChatGPT para os testes. Site estático em HTML, CSS e JavaScript lendo um JSON. GitHub Pages.
+## Como rodar
+
+O site é estático, mas carrega o JSON por `fetch`, então precisa de um servidor local:
+
+```bash
+python3 -m http.server 8080
+# abra http://localhost:8080
+```
+
+Testes (Node 20 ou superior):
+
+```bash
+npm install
+npm test            # valida data/prompts.json (schema, ids, variáveis, pastas de teste)
+npx playwright install chromium
+npm run test:e2e    # 11 testes do site no navegador
+```
 
 ## Estrutura
 
 ```
-prompts-suporte-erp/
-├─ index.html
-├─ js/app.js             # busca, filtro por categoria, copiar
-├─ data/prompts.json     # prompt, variáveis, versão, modelo, nota
-├─ testes/
-│  └─ <prompt>/          # 5 entradas fictícias, saídas e avaliação
-├─ docs/metodo.md        # rubrica e processo
-└─ README.md
+index.html, css/, js/app.js   # site (JavaScript puro, sem framework)
+data/prompts.json             # prompts, variáveis, versões, avaliações
+testes/<prompt>/              # entradas, saídas brutas e avaliação de cada prompt
+docs/metodo.md                # rubrica e processo
+tests/                        # validação do JSON (node --test)
+e2e/                          # testes do site (Playwright)
 ```
 
-## Plano
+## Resultado dos testes
 
-1. Liste 20 tarefas que você fazia à mão e escolha as 15 mais frequentes.
-2. Escreva a versão 1 de cada prompt com objetivo, contexto, formato de saída e variáveis entre chaves.
-3. Crie 5 entradas fictícias por prompt, incluindo um caso difícil.
-4. Rode nos modelos principal e econômico e guarde as saídas.
-5. Avalie com rubrica de 3 critérios: correto, completo e no formato pedido.
-6. Reescreva os que falharam (versão 2) e registre o que mudou e por quê.
-7. Monte o site: busca, filtro, botão de copiar, exemplo de entrada e saída, nota e limitações.
-8. Publique e descreva o método no README.
+Quinze prompts, cinco casos cada, nos dois modelos. O modelo principal aprovou todos os casos; o econômico aprovou 71 de 75 (três prompts com 4 de 5). Sete prompts já estão na versão 2, reescritos depois de falhas registradas no histórico de cada um. Os resultados detalhados estão em `testes/<prompt>/avaliacao.md` e no site.
 
-## Como deve funcionar
+## Decisões técnicas
 
-- O visitante busca "NF-e" e vê os prompts relacionados com a nota de cada um, por exemplo 4 de 5 casos aprovados.
-- Um clique copia o prompt com as variáveis destacadas.
-- Cada prompt mostra modelo, data do teste, limitações conhecidas e versões anteriores.
+- **Avaliação manual com rubrica fixa**, para a nota ter critério explícito e auditável.
+- **Saídas brutas versionadas** no repositório (`bruto-*`), com prompt preenchido, modelo e data.
+- **JSON como fonte única**: o site só lê `data/prompts.json`; um teste garante que ids, variáveis e pastas de teste batem.
+- **Sem framework**: todo texto vindo do JSON entra no DOM por `textContent`, sem `innerHTML`.
 
-## Prazo
+## Limitações
 
-4 a 5 dias, a maior parte em testes.
+- Os dois modelos comparados são o principal e o econômico do ChatGPT. A comparação com Claude do plano original ainda não foi feita.
+- Cinco casos por prompt são uma amostra pequena: nota máxima não prova robustez.
+- Entradas fictícias; casos reais de ERP podem ser mais confusos.
+- As saídas dependem da versão do modelo na data do teste (registrada em cada avaliação).
 
-## Autor
+## Onde a IA entrou
 
-Pablo Dilio · [Portfólio](https://hey-pablo.github.io/pablo-dilio-portfolio/) · [LinkedIn](https://www.linkedin.com/in/pablo-dilio-4063991b2)
+Os prompts, os casos e as avaliações foram produzidos com assistência de IA e revisados. Qualquer nota deve ser reavaliada antes de ser citada.
+
+## Próximos passos
+
+Rodar os mesmos casos em Claude, ampliar a amostra com casos difíceis e avaliar automaticamente com um segundo avaliador para medir a concordância.
