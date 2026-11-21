@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:42:50.733Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados.\n\nDados:\nIntegração falhou após atualização; há log com horário fictício.",
+  "stdout": "**Resumo para segundo nível**\n\n- **Sintoma:** Integração falhou após atualização.\n- **Impacto:** Não informado.\n- **Evidências:** Há um log com horário fictício; conteúdo e horário real não informados.\n- **Ações feitas:** Não informado.\n- **Pendências:** Apurar o impacto, obter o conteúdo do log e confirmar o horário real da falha. Detalhes da atualização e ações já realizadas também não informados.\n"
+}

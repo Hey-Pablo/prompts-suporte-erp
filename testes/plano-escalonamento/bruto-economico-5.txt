@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:43:15.218Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados.\n\nDados:\nUsuário afirma que houve vazamento, mas não forneceu evidências; não investigue nem afirme ocorrência.",
+  "stdout": "**Resumo para segundo nível**\n\n- **Sintoma:** Usuário afirma que houve um vazamento.\n- **Impacto:** Não informado.\n- **Evidências:** Não fornecidas.\n- **Ações feitas:** Nenhuma ação informada.\n- **Pendências:** Confirmar o impacto e solicitar evidências, se disponíveis.\n- **Campos não informados:** Sistema ou módulo afetado, período, usuários afetados, alcance e ações já realizadas.\n"
+}

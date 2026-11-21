@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:42:38.590Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados.\n\nDados:\nFila de impressão parada para filial inteira; reinício do aplicativo não resolveu.",
+  "stdout": "### Resumo para segundo nível\n\n- **Sintoma:** Fila de impressão parada para uma filial inteira.\n- **Impacto:** Impressões afetadas em toda a filial.\n- **Evidências:** O reinício do aplicativo não resolveu.\n- **Ações feitas:** Aplicativo reiniciado.\n- **Pendências:** Causa da parada e situação atual da fila não informadas.\n- **Campos não informados:** Nome ou código da filial, horário de início, mensagens de erro, impressoras afetadas e outros procedimentos realizados.\n"
+}

@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:42:58.064Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados.\n\nDados:\nRelatório retorna vazio; filtros revisados; falta acesso ao banco.",
+  "stdout": "**Resumo para suporte de segundo nível**\n\n- **Sintoma:** o relatório retorna vazio.\n- **Impacto:** o relatório não exibe dados. Usuários afetados e impacto operacional não informados.\n- **Evidências:** retorno vazio relatado. Nome do relatório, valores dos filtros, capturas de tela e logs não informados.\n- **Ações feitas:** filtros revisados.\n- **Pendências:** obter acesso ao banco para verificar os dados. Causa do problema ainda não identificada.\n- **Outros campos não informados:** ambiente, versão do ERP e data e hora da ocorrência.\n"
+}

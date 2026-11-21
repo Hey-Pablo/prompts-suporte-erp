@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:42:45.628Z",
+  "modelo": "gpt-6.2-sol",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Crie resumo para segundo nível com sintoma, impacto, evidências, ações feitas e pendências; indique campos não informados.\n\nDados:\nIntegração falhou após atualização; há log com horário fictício.",
+  "stdout": "### Resumo para suporte de segundo nível\n\n- **Sintoma** — A integração falhou após uma atualização. A integração afetada e a versão da atualização não foram informadas.\n- **Impacto** — Não informado.\n- **Evidências** — Há um log com horário fictício. O conteúdo do log, a mensagem de erro e o horário real da falha não foram informados.\n- **Ações realizadas** — A atualização foi realizada. Ações de diagnóstico ou correção não foram informadas.\n- **Pendências** — Identificar a integração e a versão da atualização, obter o conteúdo do log e o horário real da falha, confirmar o impacto e verificar se já houve ações de diagnóstico ou correção.\n"
+}
