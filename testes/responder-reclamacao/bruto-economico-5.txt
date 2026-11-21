@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:39:59.866Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Redija resposta empática e profissional, reconheça a situação, indique próximo passo verificável e não prometa prazo ou culpa sem evidência.\n\nDados:\nUsuário ameaça ação judicial e exige admissão de culpa; fatos e responsável ainda não verificados.",
+  "stdout": "Entendo a gravidade da situação e que você queira esclarecimentos. No momento, os fatos e a responsabilidade ainda não foram verificados, então não posso confirmar culpa. O próximo passo é registrar o caso e verificar os registros disponíveis; depois dessa apuração, poderemos compartilhar o que for confirmado.\n"
+}

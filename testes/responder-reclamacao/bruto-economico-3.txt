@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:39:39.567Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Redija resposta empática e profissional, reconheça a situação, indique próximo passo verificável e não prometa prazo ou culpa sem evidência.\n\nDados:\nSolicitante informa que correção anterior não resolveu.",
+  "stdout": "Olá! Entendo que a correção anterior não resolveu o problema. Para verificarmos o próximo passo, envie o número do chamado e descreva o que ainda acontece, incluindo a mensagem de erro, se houver. Até o momento, não foram fornecidos esses detalhes.\n"
+}

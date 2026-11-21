@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:39:49.371Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Redija resposta empática e profissional, reconheça a situação, indique próximo passo verificável e não prometa prazo ou culpa sem evidência.\n\nDados:\nUsuário reclama de atendimento encerrado sem retorno.",
+  "stdout": "Entendo sua insatisfação por o atendimento ter sido encerrado sem retorno. Para verificarmos o ocorrido, envie o número do chamado ou protocolo. Depois, poderemos consultar o histórico e confirmar o próximo passo.\n"
+}
