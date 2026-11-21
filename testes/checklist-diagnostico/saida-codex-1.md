@@ -1,0 +1,15 @@
+# Saída codex — caso 1
+
+Modelo: gpt-6.2-sol
+
+Data: 2026-11-21T11:37:27.210Z
+
+**Sintoma informado:** um usuário relata que não consegue acessar o ERP. A etapa da falha, a mensagem de erro e o alcance do problema são desconhecidos.
+
+### Checklist de atendimento
+
+1. **Identifique onde o acesso falha.** Pergunte se o ERP não abre, se a falha ocorre ao entrar ou se aparece depois do login. Registre a mensagem exata, a data e a hora com fuso, o último acesso bem-sucedido e qualquer mudança recente relatada. Marque os dados indisponíveis como **desconhecidos**.
+2. **Colete evidências.** Registre o ambiente, o canal de acesso (navegador ou aplicativo), o dispositivo e a rede, se informados. Se houver captura de tela, oculte dados sensíveis. Nunca solicite senhas, códigos de autenticação ou tokens.
+3. **Verifique o alcance.** Consulte chamados relacionados ou o canal interno de status, se disponíveis. Registre se há outros usuários afetados e se existe uma interrupção conhecida. Se não conseguir confirmar o alcance, marque-o como **desconhecido**.
+4. **Confira os requisitos de acesso.** Use a documentação interna, se disponível, para confirmar o endereço oficial e se há exigência de rede corporativa, VPN ou autenticação adicional. Essas dependências são **desconhecidas** até confirmação. Evite tentativas repetidas de login, alterações de permissões, redefinições de senha e mudanças de configuração durante a triagem.
+5. **Escale conforme a evidência.** Se houver múltiplos usuários afetados ou indisponibilidade confirmada, acione o fluxo de incidentes, se definido. Se houver mensagem de bloqueio, falha de autenticação ou acesso negado, encaminhe à equipe responsável por acessos, se identificada. Se a falha persistir após as verificações disponíveis ou depender de informações que o suporte não consegue consultar, encaminhe à equipe responsável pelo ERP. Inclua no chamado a etapa da falha, o erro, o horário, o impacto, as verificações feitas e as dependências ainda desconhecidas.
