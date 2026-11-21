@@ -1,0 +1,6 @@
+{
+  "data": "2026-11-21T11:44:16.645Z",
+  "modelo": "gpt-6-luna",
+  "prompt": "Você auxilia suporte de ERP. Use somente os dados fornecidos; dados ausentes devem ser sinalizados. Produza comunicado com serviço afetado, impacto conhecido, estado e próxima atualização somente se informada. Distinga hipótese de fato.\n\nDados:\nMensagem contradiz estado: serviço está normal e também parado; não há horário confirmado.",
+  "stdout": "**Comunicado de serviço**\n\n- **Serviço afetado:** Não informado.\n- **Impacto conhecido:** Não informado.\n- **Estado:** Há informações contraditórias: o serviço é descrito como normal e também como parado. Estado não confirmado.\n- **Horário:** Não há horário confirmado.\n- **Próxima atualização:** Não informada.\n"
+}
