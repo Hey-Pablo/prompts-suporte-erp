@@ -2,6 +2,8 @@
 
 > **Demonstração:** https://hey-pablo.github.io/prompts-suporte-erp/
 
+> **Status: concluído.** Site publicado no GitHub Pages, 3 testes automatizados e CI.
+
 Quinze prompts para tarefas reais de suporte e ERP, cada um com cinco casos de teste fictícios, saídas guardadas, nota por rubrica e histórico de versões, publicados num site estático com busca.
 
 ## Problema
