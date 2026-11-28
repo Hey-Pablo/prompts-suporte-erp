@@ -2,9 +2,11 @@
 
 > **Demonstração:** https://hey-pablo.github.io/prompts-suporte-erp/
 
-> **Status: concluído.** Site publicado no GitHub Pages, 3 testes automatizados e CI.
+> **Status: concluído.** Site publicado no GitHub Pages, 11 testes automatizados e CI.
 
 Quinze prompts para tarefas reais de suporte e ERP, cada um com cinco casos de teste fictícios, saídas guardadas, nota por rubrica e histórico de versões, publicados num site estático com busca.
+
+![Demonstração do site](docs/demo.gif)
 
 ## Problema
 
@@ -15,6 +17,35 @@ Prompts de IA costumam ser compartilhados como texto solto, sem evidência de qu
 Cada prompt passa por um método simples e repetível: cinco entradas fictícias (uma difícil), execução em dois modelos, avaliação manual com rubrica de três critérios (correto, completo e no formato pedido; só 3/3 aprova), reescrita dos que falharam e registro do que mudou e por quê. O site mostra o resultado: nota por modelo, exemplo de entrada e saída, limitações e versões anteriores, com botão para copiar o prompt.
 
 ![Site no desktop](docs/screenshot-desktop.png)
+
+![Site no mobile](docs/screenshot-mobile.png)
+
+## Telas
+
+**Desktop (1440×900, retina):**
+
+1. Tela inicial - visualização dos cards de prompts com busca e filtros
+   ![Desktop - tela inicial](docs/img/desktop-1-initial.png)
+
+2. Busca por "NF-e" - filtragem em tempo real
+   ![Desktop - busca NF-e](docs/img/desktop-2-search.png)
+
+3. Modal de detalhes - exibe prompt completo, variáveis e avaliações
+   ![Desktop - modal detalhes](docs/img/desktop-3-modal.png)
+
+4. Filtro por categoria - interface responsiva  
+   ![Desktop - filtro categoria](docs/img/desktop-4-filter.png)
+
+**Mobile (390×844):**
+
+1. Tela inicial - layout responsivo
+   ![Mobile - tela inicial](docs/img/mobile-1-initial.png)
+
+2. Busca - interface adaptada para telas pequenas
+   ![Mobile - busca SQL](docs/img/mobile-2-search.png)
+
+3. Modal - ajustado para mobile
+   ![Mobile - modal detalhes](docs/img/mobile-3-modal.png)
 
 ## Como rodar
 
